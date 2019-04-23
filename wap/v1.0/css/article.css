@@ -1,0 +1,112 @@
+.title{
+	padding: 0.3rem 0;
+	padding-top: 1rem;
+	background: #ffffff;
+}
+.title h3{
+	font-size: 0.36rem;
+	color: #333333;
+	line-height: 1.2em;
+	font-weight: 500;
+}
+.title p{
+	font-size: 0.26rem;
+	color: #999999;
+	padding-top: 0.3rem;
+}
+.title span{
+	padding-right: 0.6rem;
+}
+.article_main{
+	position: relative;
+	padding-bottom: 1rem;
+	background: #ffffff;
+}
+.article_main_content{
+	font-size: 0.28rem;
+	color: #333333;
+	line-height: 1.2em;
+}
+.article_main_content p{
+	font-size: 0.28rem;
+	color: #282828;
+	line-height: 1.8em;
+	text-indent: 2em;
+}
+.article_main_content img{
+	display: block;
+	width: 100%;
+	margin: 0.2rem auto;
+}
+.article_main .article_main_bottom{
+	position: absolute;
+	bottom: 0;
+	left:0.24rem;
+	/*width: 100%;*/
+	height: 1rem;
+	line-height: 1rem;
+	font-size: 0.24rem;
+	color: #999999;
+}
+.article_main .article_main_bottom span{
+	padding-right: 0.4rem;
+}
+.jmdt{
+	margin-top:0.2rem ;
+	background: #ffffff;
+	padding-bottom: 0.2rem;
+}
+.jmdt .title{
+	padding: 0.3rem 0;
+}
+.jmdt .title i{
+	float: left;
+	width: 0.1rem;
+	height: 0.26rem;
+	border-radius: 0.05rem;
+	display: inline-block;
+	background: #FF5722;
+	background-size: 0.3rem;
+	margin-right: 0.14rem;
+}
+.jmdt li{
+	padding: 0.26rem 0;
+	border-bottom: 1px  solid #e4e4e4;
+}
+.jmdt li:last-child{
+	border-bottom: 0;
+}
+.jmdt li h5{
+	font-size: 0.28rem;
+	line-height: 0.3rem;
+	padding: 0.02rem 0;
+	color: #333333;
+	font-weight: 500;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.jmdt li .li_bottom{
+	padding-top: 0.2rem;
+}
+.jmdt li .li_bottom span{
+	font-size: 0.2rem;
+	color: #999999;
+	display: inline-block;
+	margin-right: 0.4rem;
+}
+.jmdt li .li_bottom span i{
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.2rem;
+	padding-right: 0.1rem;
+	vertical-align: top;
+}
+.jmdt li .li_bottom span i.icon_i1{
+	background: url(../icon/yanjing@2x.png) no-repeat;
+	background-size:0.2rem ;
+}
+.jmdt li .li_bottom span i.icon_i2{
+	background: url(../icon/shijian@2x.png) no-repeat;
+	background-size:0.2rem ;
+}

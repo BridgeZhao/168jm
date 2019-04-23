@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html mip>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="format-detection" content="telephone=no,email=no">
+		<meta name="wap-font-scale" content="no">
+		<link rel="stylesheet" type="text/css" href="https://mipcache.bdstatic.com/static/v1/mip.css">
+		<link rel="canonical" href="https:// .168jm.cn">
+<style mip-custom>
+		/*common start*/
+			a, body, html, dd, div, dl, dt, form, h1, h2, h3, h4,h5,h6, input, li, ol, p, textarea, ul { margin: 0; padding: 0; }
+			input { border: 0 none; }
+			
+			li, ol, ul { list-style: none; }
+			
+			i, em { font-style: normal; }
+			
+			a { text-decoration: none; color: #000; }
+			
+			input, textarea, select, a:focus { outline: none; }
+			
+			input, textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+			
+			img { border: none; /*display: block*/ }
+			
+			.clearfix:after { display: block; clear: both; content: ""; visibility: hidden; height: 0; }
+			
+			body {
+				font-family: "Microsoft YaHei", "STHeiti", "Heiti SC", "SimHei", "SimSun", Arial, sans-serif;
+				background: #F2F2F2;
+				font: 16px/1 "PingFang SC",Helvetica,Arial,"Hiragino Sans GB","Microsoft Yahei",STHeiTi,sans-serif;
+			}
+			
+			.fl { float: left; }
+			
+			.fr { float: right; }
+			
+			.li-fl li { float: left; }
+			
+			.dn { display: none !important; }
+			
+			.db { display: block !important; }
+			.bgf5{
+				background: #f5f5f5 !important;
+			}
+			.padding_b {padding-bottom:0.1rem !important;}
+			.page_inner{
+				width: 100%;
+				padding: 0 0.24rem;
+				box-sizing: border-box;
+				height: auto!important;
+			}
+			.bg{
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: #333333;
+				opacity: 0.6;
+				z-index: 22;
+			}
+			/*************header*************/
+			header{
+				height: 0.88rem;
+				background: #000;
+			}
+			.header_div{
+				padding-top: .15rem;
+				width: 100%;
+				height: .73rem;
+				z-index: 2;
+				background-color:rgba(255,87,34,0.9)
+
+			}
+			.header_div.header_style2{
+				background: #ffffff;
+				border-bottom: 1px solid #e4e4e4;
+			}
+			.header_div .header_div_left{
+				width: .4rem;
+				height: .4rem;
+				margin-left: .24rem;
+				background: url(../icon/feilei@2x.png) no-repeat;
+				background-size:0.4rem;
+				background-position-x:center;
+				margin-top: 0.09rem;
+			}
+			.header_div .header_div_left.history{
+				background:url(../icon/fanhui@2x.png) no-repeat;
+				background-size:0.18rem 0.34rem;
+				background-position:center;
+			}
+			
+			.header_div .header_div_center{
+				width: 5.2rem;
+				height: .58rem;
+				line-height: 0.58rem;
+				background: #ffffff;
+				padding-left: .2rem;
+				margin-left: .42rem;
+				border-radius: .29rem;
+				overflow: hidden;
+			}
+			.header_div.header_style2 .header_div_center{
+				background: #f5f5f5;
+			}
+			.header_div.header_style2 .header_div_center p{
+				text-align: center;
+			}
+			.header_div .header_div_center .hdc_logo{
+				width: 0.5rem;
+				height: 0.28rem;
+				margin-top: 0.15rem;
+				margin-right: .2rem;
+			}
+			.header_div .header_div_center .hdc_search{
+				font-size: .28rem;
+				line-height: 0.58rem;
+				color: #cccccc;
+			}
+			.header_div .header_div_center .hdc_search em{
+				display: inline-block;
+				background: #cccccc;
+				height: 0.28rem;
+				width: 1px;
+				vertical-align: middle;
+			}
+			.header_div .header_div_center .hdc_search .hdc_search_icon{
+				display: inline-block;
+				width: .28rem;
+				height: .28rem;
+				margin: 0 .2rem;
+				background: url(../icon/sousuo@2x.png) no-repeat;
+				background-size:.28rem ;
+				vertical-align: middle;
+			}
+			.header_div .header_div_right{
+				width: .4rem;
+				height: .4rem;
+				margin-right: .24rem;
+				margin-top: 0.09rem;
+				background: url(../icon/xiala@2x.png) no-repeat;
+				background-size:.4rem ;
+				background-position-x:center;
+			}
+			.header_div.header_style2 .header_div_right{
+				background: url(../icon/xiala1@2x.png) no-repeat;
+				background-size:.4rem ;
+				background-position-x:center;
+			}
+			.hdc_search_div {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				background-color: #F5F6F7;
+			}
+			.hdc_search_div .sousuotitle{
+				height: 0.88rem;
+				background: #ffffff;
+			}
+			.hdc_search_div .sousuotitle .left{
+				height:0.88rem;
+				padding: 0.27rem;
+				box-sizing: border-box;
+			}
+			.hdc_search_div .sousuotitle .left img{
+				width: 0.18rem;
+				height: 0.34rem;
+				display: block;
+			}
+			.hdc_search_div .sousuotitle .inputbox{
+				width: 5rem;
+				height: .58rem;
+				line-height: 0.58rem;
+				background: #ffffff;
+				padding-left: .2rem;
+				margin: 0.15rem 0 0.15rem .17rem;
+				border-radius: .29rem;
+				overflow: hidden;
+				position: relative;
+				background: #F3F5F7;
+			}
+			.hdc_search_div .sousuotitle .inputbox_icon{
+				position: absolute;
+				display: inline-block;
+				width: .28rem;
+				height: .28rem;
+				top: 0.15rem;
+				left: 0.2rem;
+				background: url(../icon/sousuo@2x.png) no-repeat;
+				background-size: .28rem;
+			
+			}
+			.hdc_search_div .sousuotitle input[name="name"]{
+				height: 0.6rem;
+				width: 4rem;
+				border: 0;
+				display: block;
+				padding-left: 0.4rem;
+				font-size: 0.22rem;
+				background: #F3F5F7;
+			}
+			.hdc_search_div .sousuosubmit{
+				display: inline-block;
+				height: 0.58rem;
+				line-height: 0.58rem;
+				font-size: 0.24rem;
+				color: #ffffff;
+				margin: 0.12rem 0.24rem;
+				padding: 0 0.1rem;
+				background: #ff5722;
+				border-radius: 0.1rem;
+			}
+			.hdc_search_div  .sousuocontent{
+				margin-top: 0.15rem;
+				background-color: #fff;
+				width: 100%;
+				height: 100%;
+				padding: 0.4rem 0.2rem;
+				box-sizing: border-box;
+			}
+			.hdc_search_div  .sousuocontent .title{
+				font-size: 0.28rem;
+				line-height: 0.28rem;
+				color: #333333;
+				padding-bottom: 0.2rem;
+				width: 100%;
+				text-align: left;
+			}
+			.hdc_search_div  .sousuocontent .content{
+				/*padding-top: 0.2rem;*/
+				height: 100%;
+				overflow: hidden;
+			}
+			.hdc_search_div  .sousuocontent .content .list{
+				padding: 0.14rem 0.26rem;
+				font-size: 0.22rem;
+				color: #666666;
+				display: inline;
+				line-height: 0.15rem;
+				background-color: #f5f5f5;
+				float: left;
+				margin-right: 0.2rem;
+				margin-top: 0.4rem;
+				border-radius: 0.25rem;
+			}
+			.header_right_list{
+				/*position: fixed;*/
+				margin-left: 4.86rem;
+			    margin-top: 1.3rem;
+				width: 2.4rem;
+				background: #ffffff;
+				border-radius: 0.1rem;
+			}
+			.header_right_list:after{
+				content: '';
+				width: 0;
+				height: 0;
+				position: absolute;
+				top: -0.3rem;
+				right: 0.12rem;
+				background: #ffffff;
+				border-width: 0.16rem;
+				border-style: solid;
+				border-color: transparent transparent #ffffff transparent;
+				background: none;
+			}
+			.header_right_list li{
+				width: 2.2rem;
+				height: 0.38rem;
+				line-height: 0.38rem;
+				padding: 0.2rem 0;
+				margin: 0 0.1rem;
+				font-size: 0.22rem;
+				border-bottom: 1px solid #e4e4e4;
+			}
+			.header_right_list li:last-child{
+				border: 0;
+			}
+			.header_right_list li a{
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				line-height: 0.38rem;
+				font-size: 0.22rem;
+				color: #666666;
+			}
+			.header_right_list li span{
+				display: inline-block;
+				width: .4rem;
+				height: .4rem;
+				margin: 0 0.2rem;
+				vertical-align: middle;
+			}
+			.header_right_list li span.index{
+				background: url(../icon/shouye1@2x.png);
+				background-size:0.4rem ;
+			}
+			.header_right_list li span.fenlei{
+				background: url(../icon/xiangmu1@2x.png);
+				background-size:0.4rem ;
+			}
+			.header_right_list li span.zixun{
+				background: url(../icon/touxiao1@2x.png);
+				background-size:0.4rem ;
+			}
+			.header_right_list li span.main_top{
+				background: url(../icon/paihangbang1@2x.png);
+				background-size:0.4rem ;
+			}
+			
+			/**************footer**********/
+			footer{
+				margin-top: 0.2rem;
+			}
+			.footer_top{
+				height: 0.8rem;
+				line-height: 0.8rem;
+				background: #666666;
+				border-bottom: 1px solid #cccccc;
+			}
+			.footer_top li{
+				height: 0.36rem;
+				line-height: 0.36rem;
+				padding: 0 0.3rem;
+				margin: 0.22rem 0;
+				border-right: 1px solid #ffffff;
+				color: #ffffff;
+				font-size: 0.28rem;
+			}
+			.footer_top li a{
+				color: #ffffff;
+			}
+			.footer_top li:last-child{
+				border: 0;
+			}
+			.footer_bottom{
+				background: #666666;
+				color: #cccccc;
+				font-size: 0.24rem;
+				text-align: center;
+			}
+			.footer_bottom p{
+				padding-top: 0.12rem;
+			}
+			.footer_bottom .p1 span{
+				display: inline-block;
+				padding: 0 0.1rem;
+				font-size: 0.2rem;
+			}
+			.footer_bottom a{
+				color: #cccccc;
+			}
+			/******吸底*******/
+			.pf_footer{
+				/*position: fixed;
+				bottom: 0;
+				left: 0;*/
+				height: 0.98rem;
+				width: 100%;
+				background: #ffffff;
+				font-size: 0.2rem;
+				color: #b3b3b3;
+				border-top: 1px solid #e4e4e4;
+				z-index: 21;
+			}
+			.pf_footer .pf_footer_list{
+				width: 25%;
+				float: left;
+				padding-top:0.14rem ;
+				text-align: center;
+			}
+			.pf_footer .pf_footer_list span{
+				display: block;
+				width: 0.44rem;
+				height: 0.44rem;
+				margin: 0 auto;
+			}
+			.pf_footer .pf_footer_list.index span{
+				background: url(../icon/shouye1@2x.png);
+				background-size:0.44rem ;
+			}
+			.pf_footer .pf_footer_list.xmk span{
+				background: url(../icon/xiangmu1@2x.png);
+				background-size:0.44rem ;
+			}
+			.pf_footer .pf_footer_list.tt span{
+				background: url(../icon/touxiao1@2x.png);
+				background-size:0.44rem ;
+			}
+			.pf_footer .pf_footer_list.pftop span{
+				background: url(../icon/paihangbang1@2x.png);
+				background-size:0.44rem ;
+			}
+			.pf_footer .pf_footer_list.index.active span{
+				background: url(../icon/shouye2@2x.png);
+				background-size:0.44rem ;
+			}
+			.pf_footer .pf_footer_list.xmk.active span{
+				background: url(../icon/xiangmu2@2x.png);
+				background-size:0.44rem ;
+			}
+			.pf_footer .pf_footer_list.tt.active span{
+				background: url(../icon/touxiao2@2x.png);
+				background-size:0.44rem ;
+			}
+			.pf_footer .pf_footer_list.pftop.active span{
+				background: url(../icon/paihangbang2@2x.png);
+				background-size:0.44rem ;
+			}
+			.pf_footer .pf_footer_list.active strong{
+				color: #ff5722;
+			}
+			.pf_footer .pf_footer_list strong{
+				display: inline-block;
+				height: 0.4rem;
+				line-height: 0.4rem;
+			}
+			/*下拉加载*/
+			.wrap-ctn {
+				/*height:13rem;*/
+				overflow: hidden;
+			}
+			.paddingb89{
+				padding-bottom: 1.2rem;
+			}
+			.mip-infinitescroll-loading{
+				text-align: center;
+			    padding: 0.2rem;
+			}
+			/*栏目介绍*/
+		.newlist{
+		  background: #F8F8F8;
+		  margin-top: 0.1rem;
+		  padding: 0rem 0.24rem;
+		  padding-bottom: 0.1rem;
+		}
+		.newlisttit{
+		  height: 0.94rem;
+		} 
+		.newlisttit h6{
+			height: .94rem;
+			line-height: .94rem;
+			font-size: 0.34rem;
+			color: #333333;
+			font-weight: 400;
+		} 
+		.newlisttit i{
+		  	display: inline-block;
+			width: 0.08rem;
+			height: 0.24rem;
+			background: #ff5722;
+			border-radius: 0.04rem;
+			margin-right: 0.1rem;
+		}
+		.newlist ul li{
+		  height: 0.44rem;
+		  line-height: 0.44rem;
+		  font-size: 0.22rem;
+		  width: 6rem;
+		  overflow: hidden;
+		  text-overflow: ellipsis;
+		  white-space: nowrap;
+		  padding-left: 0.1rem;
+		  
+		}
+		.newlist ul li a{
+		  color: #666;
+		}
+		.newlist ul li i{
+		  display: block;
+		  float: left;
+		  width: 0.08rem;
+		  height: 0.08rem;
+		  color: #666666;
+		  background: #666666;
+		  border-radius: 50px;
+		  margin-right: 0.1rem;
+		  margin-top: 0.21rem;
+		}
+		.newlist p{
+		  font-size: 0.26rem;
+		  color: #666666;
+		  line-height: 1.5;
+		  text-indent: 2em;
+		}
+		/*common end*/
+		/*index start*/
+		.main_1{
+			background: #ffffff;
+			position: relative;
+		}
+		/*********轮播***************/
+		.main_1 .banner{
+			width: 100%;
+			height: 3.5rem;
+		}
+		.main_1 .banner img{
+			width: 7.5rem;
+		}
+		.main_1 #content4_lunbo_buttons{
+			bottom: 3%;
+			left: 0;
+			width: 100%;
+			height: 0.3rem;
+		}
+		.main_1 #content4_lunbo_buttons span{
+			opacity: 0.6;
+			width: 0.14rem;
+			height: 0.14rem;
+			background: #ffffff;
+		}
+		.main_1 #content4_lunbo_buttons span.swiper-pagination-bullet-active{
+			background:#ff5722 ;
+		}
+		/********nav***********/
+		.main_1 .nav{
+			padding-bottom: 0.1rem;
+		}
+		.main_1  .nav_div{
+			width: 100%;
+			height: 1.2rem;
+			padding-top: .3rem;
+		}
+		.main_1 .nav_div li {
+			width: 25%;
+			height: 1.5rem;
+			position: relative;
+		}
+		.main_1 .nav_div li a {
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.main_1 .nav_div li i {
+			display: block;
+			margin: 0 auto;
+			width: .79rem;
+			height: .58rem;
+			background-size: .79rem .58rem!important;
+		}
+		.main_1 .nav_div li span {
+			display:block;
+			text-align: center;
+			font-size: 0.24rem;
+			height: 0.24rem;
+			line-height: 0.24rem;
+			padding-top: 0.2rem;
+			color: #212121;
+		}
+		.main_1  .nav_div.nav_div_first li:nth-child(1) i{
+			background: url(../icon/1-1.png) no-repeat;
+		}
+		.main_1  .nav_div.nav_div_first li:nth-child(2) i{
+			background: url(../icon/2.png) no-repeat;
+		}
+		.main_1  .nav_div.nav_div_first li:nth-child(3) i{
+			background: url(../icon/3.png) no-repeat;
+		}
+		.main_1  .nav_div.nav_div_first li:nth-child(4) i{
+			background: url(../icon/4.png) no-repeat;
+		}
+		.main_3 ,.main_4 ,.main_6{
+			margin-top: 0.2rem;
+			background: #ffffff;
+		}
+		.main_title{
+			height: .94rem;
+			line-height: .94rem;
+			font-size: 0.34rem;
+			color: #333333;
+			padding: 0 0.24rem;
+			font-weight: 400;
+		}
+		.main_title .main_title_icon{
+			display: inline-block;
+			width: 0.08rem;
+			height: 0.24rem;
+			background: #ff5722;
+			border-radius: 0.04rem;
+		}
+		.main_title .main_title_text{
+			font-size: 0.24rem;
+			padding-left: 0.1rem;
+			color: #666666;
+			font-weight: 400;
+		}
+		.main_title .main_title_fr{
+			font-size: 0.24rem;
+			height: 0.94rem;
+			line-height: 1rem;
+			color: #999999;
+			overflow: hidden;
+		}
+		.main_title .main_title_fr a{
+			color: #999999;
+		}
+		.main_title .main_title_fr em{
+			display: inline-block;
+			width: 0.24rem;
+			height: 0.24rem;
+			background: url(../icon/gengduo1@2x.png) no-repeat;
+			background-size:0.24rem;
+			vertical-align: middle;
+		}
+		
+		.main_3_list{
+			padding: 0 0.24rem 0.3rem;
+		}
+		.main_3_list  ul{
+			margin-right: -0.21rem;
+		}
+		.main_3_list  li{
+			width: 3.41rem;
+			padding-bottom: 0.2rem;
+			margin-right: 0.2rem;
+			margin-bottom: 0.2rem;
+			background: #f4f4f4;
+			overflow: hidden;
+		}
+		.main_3_list  li .div_img{
+			width: 2.82rem;
+			height: 1.88rem;
+			margin: 0 auto;
+			margin-top: 0.3rem;
+			position: relative;
+		}
+		.main_3_list  li .div_img img{
+			width: 100%;
+			height: 100%;
+		}
+		.main_3_list  li h6{
+			font-size: 0.3rem;
+			height: 0.34rem;
+			line-height: 0.34rem;
+			margin-top: 0.18rem;
+			padding: 0 0.3rem;
+			color: #000000;
+			text-overflow:ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
+			font-weight: 400;
+		}
+		.main_3_list  li p{
+			padding: 0 0.3rem;
+		}
+		.main_3_list  li .p1{
+			font-size: 0.24rem;
+			height: 0.34rem;
+			line-height: 0.34rem;
+			color: #fe7800;
+			margin-top: 0.2rem;
+		}
+		.main_3_list  li .p1 span{
+			border:1px solid #fe7800;
+			padding: 0.03rem 0.06rem;
+			border-radius: 0.1rem;
+			margin-right: 0.1rem;
+			font-size: 0.2rem;
+			line-height: 0.2rem;
+		}
+		.main_3_list  li .p2{
+			margin-top: 0.2rem;
+			color: #848383;
+			font-size: 0.2rem;
+			position: relative;
+		}
+		.main_3_list  li .p2 span{
+			padding: 0.1rem 0;
+			color: rgb(255, 0, 0);
+			font-size: 0.24rem;
+		}
+		.main_3_list  li .p2 .span_1{
+			background-color: rgb(255, 230, 235);
+			padding: 0.1rem 0.12rem;
+			border-radius: 0.2rem;
+			color: #ff5722;
+			font-size: 0.22rem;
+			margin: 0 auto;
+		}
+		.main_4{
+			padding-bottom: 0.3rem;
+		}
+		.main_4_list ul{
+			padding: 0 0.24rem;
+			display: none;
+		}
+		.main_4_list ul:first-child{
+			display: block;
+		}
+		.main_4_list  li{
+			padding: 0.3rem 0;
+			border-bottom: 1px solid #e4e4e4;
+		}
+		.main_4_list li .li_img{
+			width: 2.4rem;
+			height: 1.6rem;
+		}
+		.main_4_list li .li_text{
+			width: 4.38rem;
+			height:1.6rem ;
+			overflow: hidden;
+			padding-left: 0.24rem;
+			position: relative;
+		}
+		.main_4_list li .li_text h6{
+			max-height: 0.6rem;
+			line-height: 0.3rem;
+			font-size: .28rem;
+			color: #212121;
+			font-weight: 600;
+			padding: 0.05rem 0;
+			overflow: hidden;
+		}
+		.main_4_list li .li_text .p1{
+			padding-top: 0.05rem;
+			width: 4.1rem;
+			max-height: 0.7rem;
+			overflow: hidden;
+			line-height: 0.3rem;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		.main_4_list li .li_text .p1 p{
+			max-height: 0.7rem;
+			width: 100%;
+			font-size: 0.22rem;
+			letter-spacing:0.02rem;
+			color: #5e5e5e;
+			line-height: 0.34rem;
+			overflow: hidden;
+			white-space: initial;
+		}
+		.main_4_list li .li_text .p2{
+			width: 4.38rem;
+			font-size: 0.22rem;
+			color: #848383;
+			overflow: hidden;
+			padding-left: 0.24rem;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 0.26rem;
+			line-height: 0.26rem;
+			background: #ffffff;
+		}
+		.main_4_list li .li_text .p2 .span_1 i{
+			display: inline-block;
+			width: 0.21rem;
+			height: 0.23rem;
+			background: url(../icon/je.png) no-repeat;
+			background-size:0.21rem 0.23rem;
+			vertical-align: sub;
+			margin-right: 0.1rem;
+		}
+		.main_4_list li .li_text .p2 .span_2 i{
+			display: inline-block;
+			width: 0.27rem;
+			height: 0.18rem;
+			background: url(../icon/rs.png) no-repeat;
+			background-size:0.27rem 0.17rem;
+			vertical-align: baseline;
+			margin-right: 0.1rem;
+		}
+		.main_4 .more_detail ,.main_5 .more_detail{
+			width: 7.02rem;
+			height: 0.64rem;
+			margin: 0 auto;
+			font-size: 0.26rem;
+			line-height: 0.6rem;
+			text-align: center;
+			background: #ff5722;
+		}
+		.main_4 .more_detail a,.main_6 .more_detail a{
+			color: #fff;
+		}	
+		.main_6_list ul{
+			padding: 0 0.24rem;
+			display: none;
+		}
+		.main_6_list ul:first-child{
+			display: block;
+		}
+		.main_6_list  li{
+			padding: 0.3rem 0;
+			border-bottom: 1px solid #e4e4e4;
+		}
+		.main_6_list li .li_img{
+			width: 2.4rem;
+			height: 1.6rem;
+			padding-left: 0.24rem;
+		}
+		.main_6_list li .li_text{
+			width: 4.38rem;
+			height:1.6rem ;
+			overflow: hidden;
+			position: relative;
+		}
+		.main_6_list li .li_text h6{
+			max-height: 0.6rem;
+			line-height: 0.3rem;
+			font-size: .28rem;
+			color: #212121;
+			font-weight: 600;
+			padding: 0.05rem 0;
+			overflow: hidden;
+		}
+		.main_6_list li .li_text .p1{
+			padding-top: 0.05rem;
+			width: 4.5rem;
+			overflow: hidden;
+			line-height: 0.3rem;
+			overflow: hidden;
+		}
+		.main_6_list li .li_text .p1 p{
+			max-height: 0.7rem;
+			width: 100%;
+			font-size: 0.22rem;
+			letter-spacing:0.02rem;
+			color: #5e5e5e;
+			line-height: 0.34rem;
+			overflow: hidden;
+			white-space: initial;
+		}
+		.main_6_list li .li_text .p2{
+			width: 4.5rem;
+			font-size: 0.22rem;
+			color: #848383;
+			overflow: hidden;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 0.26rem;
+			line-height: 0.26rem;
+			background: #ffffff;
+		}
+		.main_6_list li .li_text .p2 .span_1 i{
+			display: inline-block;
+			width: 0.2rem;
+			height: 0.2rem;
+			background: url(../icon/yh.png) no-repeat;
+			background-size:0.14rem 0.16rem;
+			vertical-align: sub;
+			margin-right: 0.1rem;
+		}
+		.main_6_list li .li_text .p2 .span_2 i{
+			display: inline-block;
+			width: 0.2rem;
+			height: 0.2rem;
+			background: url(../icon/shijian@2x.png) no-repeat;
+			background-size:0.2rem 0.2rem;
+			vertical-align: initial;
+			margin-right: 0.1rem;
+		}
+		
+		/*index end*/
+		mip-vd-tabs .mip-vd-tabs-nav{
+			padding: 0 0.24rem;
+		}
+		mip-vd-tabs .mip-vd-tabs-nav-li {
+			width: 1.16rem;
+			height: 0.8rem;
+			line-height: 0.8rem;
+			font-size: 0.28rem;
+			color: #212121;
+			text-align: center;
+			border-bottom: 1px solid #e4e4e4;
+		}
+		mip-vd-tabs .mip-vd-tabs-nav .mip-vd-tabs-nav-selected{
+			color: #ff5722 !important;
+			border-bottom: 1px solid #e4e4e4;
+			position: relative;
+		}
+		mip-vd-tabs .mip-vd-tabs-nav .mip-vd-tabs-nav-selected:before{
+			content: "";
+			position: absolute;
+			width: 1rem;
+			height: 0.05rem;
+			background: #ff5722;
+			border-radius: 0.03rem;
+			bottom: 0;
+			left: 50%;
+			margin-left: -0.5rem;
+		}
+		mip-zl-newsroll #moocBox{
+			height: 0.6rem;
+			line-height: 0.6rem;
+		}
+		mip-zl-newsroll #moocBox ul li{
+			height: 0.6rem;
+			line-height: 0.6rem;
+		}
+		mip-zl-newsroll #moocBox ul li a{
+			line-height: 0.6rem;
+			color: #333333;
+			font-size: 0.24rem;
+		}
+		.mip-carousel-indicator-wrapper{
+			position: absolute;
+			bottom: 0.68rem;
+			left: 0;
+			width: 100%;
+		}
+		.mip-carousel-indicatorDot .mip-carousel-indecator-item{
+			width: 0.14rem;
+			height: 0.14rem;
+		}
+		.mip-carousel-indicatorDot .mip-carousel-activeitem{
+			background: #ff5722;
+		}
+		mip-vd-tabs .mip-vd-tabs-nav-view .mip-vd-tabs-nav .mip-vd-tabs-nav-li{
+			padding: 0 0.6rem;
+			
+		}
+	</style>
+	</head>
+	<body>
+		<mip-yesky-rem data-rem="750" class="mip-element mip-layout-container"></mip-yesky-rem>
+		<mip-cambrian site-id="1612546382269331"></mip-cambrian>
+		<header><mip-fixed type="top">
+			<div class="header_div header_style2 clearfix">
+				<div class="header_div_left history fl">
+					<!--<img src="../icon/fenlei@2x.png" />-->
+				</div>
+				<div class="header_div_center fl clearfix" on="tap:my-searchbox.open">	
+					<div class="hdc_search fl">
+						<span class="hdc_search_icon"></span>搜索
+					</div>
+				</div>
+				<div class="header_div_right fr" on="tap:my-lightbox.toggle">
+					<!--<img src="../icon/xiala@2x.png" />-->
+				</div>
+			</div>
+		</mip-fixed></header>
+		<div class="main">
+			<div class="main_1">
+				<mip-carousel autoplay defer="2000"  layout="responsive"  width="750"  height="350">
+					<a target="_blank" href="m.168jm.cn">
+				        <mip-img src="../images/baner@2x.png" /></mip-img>
+				    </a>
+				    <a target="_blank" href="m.168jm.cn">
+				        <mip-img src="../images/baner@2x.png" /></mip-img>
+				    </a>
+				    <a target="_blank" href="m.168jm.cn">
+				        <mip-img src="../images/baner@2x.png" /></mip-img>
+				    </a>
+				</mip-carousel>
+				<div class="nav">
+					<div class="nav_div nav_div_first">
+						<ul class="nav_ul_list li-fl clearfix">
+							<li>
+								<a href="#">
+									<i></i>
+									<span>今日新品</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i></i>
+									<span>品牌推荐</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i></i>
+									<span>热搜项目</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i></i>
+									<span>猜你喜欢</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="main_3">
+				<h3 class="main_title">
+					<span class="main_title_icon"></span>
+					最新项目
+			
+				</h3>
+				<div class="main_3_list">
+					<ul class="li-fl clearfix">
+						<li><a href="#">
+							<div class="div_img">
+								<mip-img src="../images/tu14@2x.png" /></mip-img>
+							</div>
+							<h6>桥香园桥香园桥香园桥香园桥香园</h6>
+							<p class="p1 clearfix"><!--<span class="fl">餐饮</span>--><span class="fl">串串香</span></p>
+							<p class="p2 clearfix"><span class="fl">￥10-20万</span><span class="span_1 fr">立即咨询</span></p>
+						</a></li>
+						<li><a href="#">
+							<div class="div_img">
+								<mip-img src="../images/tu14@2x.png" /></mip-img>
+							</div>
+							<h6>桥香园桥香园桥香园桥香园桥香园</h6>
+							<p class="p1 clearfix"><!--<span class="fl">餐饮</span>--><span class="fl">串串香</span></p>
+							<p class="p2 clearfix"><span class="fl">￥10-20万</span><span class="span_1 fr">立即咨询</span></p>
+						</a></li>
+						<li><a href="#">
+							<div class="div_img">
+								<mip-img src="../images/tu14@2x.png" /></mip-img>
+							</div>
+							<h6>桥香园桥香园桥香园桥香园桥香园</h6>
+							<p class="p1 clearfix"><!--<span class="fl">餐饮</span>--><span class="fl">串串香</span></p>
+							<p class="p2 clearfix"><span class="fl">￥10-20万</span><span class="span_1 fr">立即咨询</span></p>
+						</a></li>
+						<li><a href="#">
+							<div class="div_img">
+								<mip-img src="../images/tu14@2x.png" /></mip-img>
+							</div>
+							<h6>桥香园桥香园桥香园桥香园桥香园</h6>
+							<p class="p1 clearfix"><!--<span class="fl">餐饮</span>--><span class="fl">串串香</span></p>
+							<p class="p2 clearfix"><span class="fl">￥10-20万</span><span class="span_1 fr">立即咨询</span></p>
+						</a></li>
+						<li><a href="#">
+							<div class="div_img">
+								<mip-img src="../images/tu14@2x.png" /></mip-img>
+							</div>
+							<h6>桥香园桥香园桥香园桥香园桥香园</h6>
+							<p class="p1 clearfix"><!--<span class="fl">餐饮</span>--><span class="fl">串串香</span></p>
+							<p class="p2 clearfix"><span class="fl">￥10-20万</span><span class="span_1 fr">立即咨询</span></p>
+						</a></li>
+						<li><a href="#">
+							<div class="div_img">
+								<mip-img src="../images/tu14@2x.png" /></mip-img>
+							</div>
+							<h6>桥香园桥香园桥香园桥香园桥香园</h6>
+							<p class="p1 clearfix"><!--<span class="fl">餐饮</span>--><span class="fl">串串香</span></p>
+							<p class="p2 clearfix"><span class="fl">￥10-20万</span><span class="span_1 fr">立即咨询</span></p>
+						</a></li>
+						<li><a href="#">
+							<div class="div_img">
+								<mip-img src="../images/tu14@2x.png" /></mip-img>
+							</div>
+							<h6>桥香园桥香园桥香园桥香园桥香园</h6>
+							<p class="p1 clearfix"><!--<span class="fl">餐饮</span>--><span class="fl">串串香</span></p>
+							<p class="p2 clearfix"><span class="fl">￥10-20万</span><span class="span_1 fr">立即咨询</span></p>
+						</a></li>
+						<li><a href="#">
+							<div class="div_img">
+								<mip-img src="../images/tu14@2x.png" /></mip-img>
+							</div>
+							<h6>桥香园桥香园桥香园桥香园桥香园</h6>
+							<p class="p1 clearfix"><!--<span class="fl">餐饮</span>--><span class="fl">串串香</span></p>
+							<p class="p2 clearfix"><span class="fl">￥10-20万</span><span class="span_1 fr">立即咨询</span></p>
+						</a></li>
+						<li><a href="#">
+							<div class="div_img">
+								<mip-img src="../images/tu14@2x.png" /></mip-img>
+							</div>
+							<h6>桥香园桥香园桥香园桥香园桥香园</h6>
+							<p class="p1 clearfix"><!--<span class="fl">餐饮</span>--><span class="fl">串串香</span></p>
+							<p class="p2 clearfix"><span class="fl">￥10-20万</span><span class="span_1 fr">立即咨询</span></p>
+						</a></li>
+						<li><a href="#">
+							<div class="div_img">
+								<mip-img src="../images/tu14@2x.png" /></mip-img>
+							</div>
+							<h6>桥香园桥香园桥香园桥香园桥香园</h6>
+							<p class="p1 clearfix"><!--<span class="fl">餐饮</span>--><span class="fl">串串香</span></p>
+							<p class="p2 clearfix"><span class="fl">￥10-20万</span><span class="span_1 fr">立即咨询</span></p>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="main_4">
+				<h3 class="main_title">
+					<span class="main_title_icon"></span>
+					精华推荐
+				</h3>
+
+				<mip-vd-tabs allow-scroll>
+					<section>
+						<li class="on">品牌推荐</li><li>热搜项目</li><li>猜您喜欢</li>
+					</section>
+					<div class="main_4_list">
+						<ul>
+							<li class="clearfix"><a href="#">
+								<mip-img class="li_img fl" src="../images/tu1@3x.png" /></mip-img>
+								<div class="li_text fl">
+									<h6>钢管厂五区小郡肝串串</h6>
+									<div class="p1"><p>对方是个负担感回到法国和风格化的分隔号使得法国和省电费干哈杀的惯犯阿萨德割发代首弗格森的风格深度覆盖深度覆盖</p></div>
+									<p class="p2 clearfix"><span class="span_1"><i></i>50-100万</span> <span class="fr span_2"><i></i>99999</span></p>
+								</div>
+							</a></li>
+							<li class="clearfix"><a href="#">
+								<mip-img class="li_img fl" src="../images/tu1@3x.png" /></mip-img>
+								<div class="li_text fl">
+									<h6>钢管厂五区小郡肝串串</h6>
+									<div class="p1"><p>对方是个负担感回到法国和风格化的分隔号使得法国和省电费干哈杀的惯犯阿萨德割发代首弗格森的风格深度覆盖深度覆盖</p></div>
+									<p class="p2 clearfix"><span class="span_1"><i></i>50-100万</span> <span class="fr span_2"><i></i>99999</span></p>
+								</div>
+							</a></li>
+							<li class="clearfix"><a href="#">
+								<mip-img class="li_img fl" src="../images/tu1@3x.png" /></mip-img>
+								<div class="li_text fl">
+									<h6>钢管厂五区小郡肝串串</h6>
+									<div class="p1"><p>对方是个负担感回到法国和风格化的分隔号使得法国和省电费干哈杀的惯犯阿萨德割发代首弗格森的风格深度覆盖深度覆盖</p></div>
+									<p class="p2 clearfix"><span class="span_1"><i></i>50-100万</span> <span class="fr span_2"><i></i>99999</span></p>
+								</div>
+							</a></li>
+							<li class="clearfix"><a href="#">
+								<mip-img class="li_img fl" src="../images/tu1@3x.png" /></mip-img>
+								<div class="li_text fl">
+									<h6>钢管厂五区小郡肝串串</h6>
+									<div class="p1"><p>对方是个负担感回到法国和风格化的分隔号使得法国和省电费干哈杀的惯犯阿萨德割发代首弗格森的风格深度覆盖深度覆盖</p></div>
+									<p class="p2 clearfix"><span class="span_1"><i></i>50-100万</span> <span class="fr span_2"><i></i>99999</span></p>
+								</div>
+							</a></li>
+							<li class="clearfix"><a href="#">
+								<mip-img class="li_img fl" src="../images/tu1@3x.png" /></mip-img>
+								<div class="li_text fl">
+									<h6>钢管厂五区小郡肝串串</h6>
+									<div class="p1"><p>对方是个负担感回到法国和风格化的分隔号使得法国和省电费干哈杀的惯犯阿萨德割发代首弗格森的风格深度覆盖深度覆盖</p></div>
+									<p class="p2 clearfix"><span class="span_1"><i></i>50-100万</span> <span class="fr span_2"><i></i>99999</span></p>
+								</div>
+							</a></li>
+						</ul>
+					</div>
+					<div class="main_4_list">
+						<ul >
+							<li class="clearfix"><a href="#">
+								<mip-img class="li_img fl" src="../images/tu1@3x.png" /></mip-img>
+								<div class="li_text fl">
+									<h6>钢管厂五区小郡肝串串</h6>
+									<div class="p1"><p>对方是个负担感回到法国和风格化的分隔号使得法国和省电费干哈杀的惯犯阿萨德割发代首弗格森的风格深度覆盖深度覆盖</p></div>
+									<p class="p2 clearfix"><span class="span_1"><i></i>50-100万</span> <span class="fr span_2"><i></i>99999</span></p>
+								</div>
+							</a></li>
+							<li class="clearfix"><a href="#">
+								<mip-img class="li_img fl" src="../images/tu1@3x.png" /></mip-img>
+								<div class="li_text fl">
+									<h6>钢管厂五区小郡肝串串</h6>
+									<div class="p1"><p>对方是个负担感回到法国和风格化的分隔号使得法国和省电费干哈杀的惯犯阿萨德割发代首弗格森的风格深度覆盖深度覆盖</p></div>
+									<p class="p2 clearfix"><span class="span_1"><i></i>50-100万</span> <span class="fr span_2"><i></i>99999</span></p>
+								</div>
+							</a></li>
+							<li class="clearfix"><a href="#">
+								<mip-img class="li_img fl" src="../images/tu1@3x.png" /></mip-img>
+								<div class="li_text fl">
+									<h6>钢管厂五区小郡肝串串</h6>
+									<div class="p1"><p>对方是个负担感回到法国和风格化的分隔号使得法国和省电费干哈杀的惯犯阿萨德割发代首弗格森的风格深度覆盖深度覆盖</p></div>
+									<p class="p2 clearfix"><span class="span_1"><i></i>50-100万</span> <span class="fr span_2"><i></i>99999</span></p>
+								</div>
+							</a></li>
+						</ul>
+					</div>
+				</mip-vd-tabs>
+				<div class="more_detail"><a href="https://m.168jm.cn/project/">
+					查看更多
+				</a></div>
+			</div>
+			<div class="main_6">
+				<h3 class="main_title">
+					<span class="main_title_icon"></span>
+					精华推荐
+				</h3>
+					<div class="main_6_list">
+						<ul>
+							<li class="clearfix"><a href="#">
+								<div class="li_text fl">
+									<h6>未来十年赚钱的逻辑是什么</h6>
+									<div class="p1"><p>对方是个负担感回到法国和风格化的分隔号使得法国和省电费干哈杀的惯犯阿萨德割发大师傅水电费是的法规是的法规是的法规电饭锅讽德诵功都是法国是的法规代首弗格森的风格深度覆盖深度覆盖</p></div>
+									<p class="p2 clearfix"><span class="span_1"><i></i>即盟小强</span> <span class="fr span_2"><i></i>2018-11-27</span></p>
+								</div>
+								<mip-img class="li_img fl" src="../images/tu1@3x.png" /></mip-img>
+							</a></li>
+							<li class="clearfix"><a href="#">
+								<div class="li_text fl">
+									<h6>未来十年赚钱的逻辑是什么</h6>
+									<div class="p1"><p>对方是个负担感回到法国和风格化的分隔号使得法国和省电费干哈杀的惯犯阿萨德割发代首弗格森的风格深度覆盖深度覆盖</p></div>
+									<p class="p2 clearfix"><span class="span_1"><i></i>即盟小强</span> <span class="fr span_2"><i></i>2018-11-27</span></p>
+								</div>
+								<mip-img class="li_img fl" src="../images/tu1@3x.png" /></mip-img>
+							</a></li>
+							<li class="clearfix"><a href="#">
+								<div class="li_text fl">
+									<h6>未来十年赚钱的逻辑是什么</h6>
+									<div class="p1"><p>对方是个负担感回到法国和风格化的分隔号使得法国和省电费干哈杀的惯犯阿萨德割发代首弗格森的风格深度覆盖深度覆盖</p></div>
+									<p class="p2 clearfix"><span class="span_1"><i></i>即盟小强</span> <span class="fr span_2"><i></i>2018-11-27</span></p>
+								</div>
+								<mip-img class="li_img fl" src="../images/tu1@3x.png" /></mip-img>
+							</a></li>
+							<li class="clearfix"><a href="#">
+								<div class="li_text fl">
+									<h6>未来十年赚钱的逻辑是什么</h6>
+									<div class="p1"><p>对方是个负担感回到法国和风格化的分隔号使得法国和省电费干哈杀的惯犯阿萨德割发代首弗格森的风格深度覆盖深度覆盖</p></div>
+									<p class="p2 clearfix"><span class="span_1"><i></i>即盟小强</span> <span class="fr span_2"><i></i>2018-11-27</span></p>
+								</div>
+								<mip-img class="li_img fl" src="../images/tu1@3x.png" /></mip-img>
+							</a></li>
+							<li class="clearfix"><a href="#">
+								<div class="li_text fl">
+									<h6>未来十年赚钱的逻辑是什么</h6>
+									<div class="p1"><p>对方是个负担感回到法国和风格化的分隔号使得法国和省电费干哈杀的惯犯阿萨德割发代首弗格森的风格深度覆盖深度覆盖</p></div>
+									<p class="p2 clearfix"><span class="span_1"><i></i>即盟小强</span> <span class="fr span_2"><i></i>2018-11-27</span></p>
+								</div>
+								<mip-img class="li_img fl" src="../images/tu1@3x.png" /></mip-img>
+							</a></li>
+							
+						</ul>
+					</div>				
+				<div class="more_detail"><a href="https://m.168jm.cn/project/">
+					查看更多
+				</a></div>
+			</div>
+			<div class="newlist">
+				<div class="newlisttit">
+					<h6><i></i>栏目介绍</h6>
+				</div>
+					<p>招商加盟项目排行榜是一个综合性排行榜。在即盟网的所有项目都会按照人气搜索指数、在线咨询次数、关注人数、品牌口碑，以及品牌落地的实体店在业界的美誉度、服务意识指数等进行全面的大数据分析，确保每个上榜的品牌项目都是客观、准确和透明的。</p>
+					<p>目前排行榜提供有月榜、行业分类榜单。月榜，是以每个月的数据为基础进行排名展示；分类榜单，有大行业和小行业的榜单。大行业如餐饮加盟排行榜，是综合所有餐饮品牌的榜单，再有小行业有奶茶店加盟排行榜、麻辣烫加盟店排行榜、中餐店加盟排行榜等，是以每个行业的项目进行排名展示。</p>
+					<p>即盟网加盟排行榜，实时反映各家企业的品牌项目排名走向，对每个行业的榜单直观展示，给予每个投资创业者在加盟投资前送去有价值的参考风向。</p>		</div>
+			</div>
+		<footer>
+			<div class="footer_top"><ul class="li-fl">
+				<li><a href="#">新闻</a></li>
+				<li><a href="#">找项目</a></li>
+				<li><a href="#">餐饮</a></li>
+				<li><a href="#">火锅</a></li>
+				<li><a href="#">甜品</a></li>
+				<li><a href="#">建材</a></li>
+			</ul></div>
+			<div class="footer_bottom">
+				<p class="p1"><a href="#">电脑版</a><span>|</span><a href="#">MIP</a></p>
+				<p>COPYRIGHT &copy; 2018 168加盟网</p>
+				<p>川ICP备11111111-1号</p>
+			</div>
+		</footer>
+		<!--底部悬浮 start-->
+		<mip-fixed type="bottom">
+		    <div class="pf_footer clearfix">
+		        <div class="pf_footer_list index active"><a href="https://m.168jm.cn/" data-type="mip">
+		            <span></span>
+		            <strong>首页</strong></a>
+		        </div>
+		        <div class="pf_footer_list xmk"><a href="https://m.168jm.cn/project/">
+		            <span></span>
+		            <strong>项目库</strong></a>
+		        </div>
+		        <div class="pf_footer_list tt"><a href="https://m.168jm.cn/news/" data-type="mip">
+		            <span></span>
+		            <strong>头条</strong></a>
+		        </div>
+		        <div class="pf_footer_list pftop"><a href="https://m.168jm.cn/top/">
+		            <span></span>
+		            <strong>排行榜</strong></a>
+		        </div>
+		    </div>
+		</mip-fixed>
+		<!--底部悬浮 end-->
+
+	<!--公用搜索模块组件 start-->
+		<mip-lightbox id="my-searchbox" layout="nodisplay" class="mip-hidden">
+		<div class="hdc_search_div">
+			<div class="sousuotitle clearfix"><mip-form method="get" url="https://www.168jm.cn">
+				<div class="left fl"  on="tap:my-searchbox.close">
+					<mip-img src="../icon/fanhui@2x.png"></mip-img>
+				</div>
+				<div class="inputbox fl">
+					<span class="inputbox_icon"></span>
+					<input type="text" name="sousuotitle" id="searchPage" value="" placeholder="请输入您想查找的项目">
+				</div>
+				<div class="sousuosubmit fr" id="sousuosu_bmit">
+					搜索
+				</div>
+			</mip-form></div>
+			<div class="sousuocontent">
+				<div class="title">热门搜索</div>
+				<div class="content" data-id="m_n_search_recommend" data-type="cmsadpos">
+					<a href="#" data-id="5941" data-type="cmsad">
+						<div class="list">功夫鸡排</div>
+					</a>
+					<a href="#" data-id="14649" data-type="cmsad">
+						<div class="list">雪之蜜语</div>
+					</a>
+					<a href="#" data-id="41721" data-type="cmsad">
+						<div class="list">巴比酷肉蟹煲</div>
+					</a>
+					<a href="#" data-id="55175" data-type="cmsad">
+						<div class="list">喫茶时光</div>
+					</a>
+					<a href="#" data-id="55176" data-type="cmsad">
+						<div class="list">蜜秘鸡地炸鸡</div>
+					</a>
+					<a href="#" data-id="55177" data-type="cmsad">
+						<div class="list">美贝美妈</div>
+					</a>
+					<a href="#" data-id="55178" data-type="cmsad">
+						<div class="list">过江龙火锅</div>
+					</a>
+					<a href="#" data-id="55179" data-type="cmsad">
+						<div class="list">洁希亚国际洗衣</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		</mip-lightbox>
+		<mip-lightbox id="my-lightbox" layout="nodisplay" class="mip-hidden">
+			<div class="header_right_list">
+				<ul>
+					<li><a href="#"><span class="index"></span>首页</a></li>
+					<li><a href="#"><span class="fenlei"></span>分类搜索</a></li>
+					<li><a href="#"><span class="zixun"></span>创业资讯</a></li>
+					<li><a href="#"><span class="main_top"></span>加盟排行</a></li>
+				</ul>  
+			</div>
+		</mip-lightbox>
+		<!--公用搜索模块组件 end-->	
+		<!--<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript" src="../js/index.js"></script>-->
+		<!--mip 运行环境-->
+        <script src="https://mipcache.bdstatic.com/static/v1/mip.js"></script>
+        <!--fixed 代码-->
+        <script src="https://c.mipcdn.com/static/v1/mip-fixed/mip-fixed.js"></script>
+        <script src="https://c.mipcdn.com/static/v1/mip-lightbox/mip-lightbox.js"></script><!--弹窗-->
+		<script src="https://mipcache.bdstatic.com/extensions/platform/v1/mip-yesky-rem/mip-yesky-rem.js "></script><!--rem-->
+		<script src="https://c.mipcdn.com/static/v1/mip-vd-tabs/mip-vd-tabs.js"></script><!-- tab选项卡-->
+		<!--熊账号 start-->
+		<script src="https://c.mipcdn.com/extensions/platform/v1/mip-cambrian/mip-cambrian.js"></script>
+		<script type="application/ld+json">
+	        {
+	            "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+	            "@id": "https://www.example.com/******",
+	            "appid": "1612546382269331",
+	            "title": "页面标题******",
+	            "images": [
+	                "https://www.example.com/***/pic1.png",
+	                "https://www.example.com/***/pic2.png",
+	                "https://www.example.com/***/pic3.png"
+	            ], //请在此处添加希望在搜索结果中展示图片的url，可以添加0个、1个或3个url
+	            "pubDate": "2017-06-15T08:00:01" // 需按照yyyy-mm-ddThh:mm:ss格式编写时间，字母T不能省去
+	        }
+    	</script>
+    	<!--熊账号 end-->
+	</body>
+</html>

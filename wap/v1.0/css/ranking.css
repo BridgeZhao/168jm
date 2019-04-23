@@ -1,0 +1,104 @@
+body{
+	background: #ffffff;
+}
+.section_tab{
+	padding: 0.3rem 0;
+	text-align: center;
+}
+.section_tab span{
+	display: inline-block;
+	/*width: 1.7rem;*/
+	height: 0.58rem;
+	line-height: 0.58rem;
+	padding: 0 0.2rem;
+	border: 1px  solid  #ff5722;
+	font-size: 0.28rem;
+	color: #ff5722;
+	overflow: hidden;
+}
+.section_tab .span1{
+	border-top-left-radius: 0.29rem;
+	border-bottom-left-radius: 0.29rem;
+}
+.section_tab .span2{
+	border-top-right-radius: 0.29rem;
+	border-bottom-right-radius: 0.29rem;
+}
+.section_tab span.active{
+	background: #ff5722;
+	color: #ffffff;
+}
+.remen .section_list{
+
+}
+.remen .section_list li{
+	border-bottom: 1px solid #e4e4e4;
+	padding: 0.3rem 0;
+}
+.remen .section_list li .li_img{
+	width: 2.4rem;
+	height: 1.6rem;
+}
+.remen .section_list li .li_text{
+	padding-left: 0.24rem;
+}
+.remen .section_list li .li_text h6{
+	font-size: 0.3rem;
+	color: #000000;
+	font-weight: bold;
+	padding: 0.06rem 0;
+}
+.remen .section_list li .li_text p{
+	font-size: 0.26rem;
+	color: #777777;
+	padding: 0.06rem 0;
+}
+.remen .section_list li .li_text p span{
+	color: #333333;
+	font-weight: bold;
+}
+.remen .section_list li .li_text .p1 {
+	padding-top: 0.1rem;
+}
+.remen .section_list li .li_text .p1 span{
+	color: #ff5722;
+	font-size: 0.34rem;
+}
+.remen .section_list li .li_a{
+	width: 1.4rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	color: #ffffff;
+	font-size: 0.24rem;
+	background: #ff5722;
+	border-radius: 0.25rem;
+	text-align: center;
+	margin-top: 0.56rem;
+}
+.remen .section_more{
+	width: 4rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	font-size: 0.34rem;
+	color: #333333;
+	background: #F5F5F5;
+	border-radius: 0.06rem;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 0.3rem;
+}
+.fenlei ul{
+	margin-right: -0.2rem;
+}
+.fenlei ul li{
+	width: 1.2rem;
+	height: 1rem;
+	/*line-height: 1.6rem;*/
+	text-align: center;
+	background: #F5F5F5;
+	font-size: 0.24rem;
+	color: #333333;
+	margin-right: 0.2rem;
+	margin-bottom: 0.2rem;
+	padding: 0.6rem 0.2rem 0;
+}

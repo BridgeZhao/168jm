@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html mip>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="wap-font-scale" content="no">
+		<meta name="format-detection" content="telephone=no,email=no">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title>文章详情</title>
+		<link rel="stylesheet" type="text/css" href="https://mipcache.bdstatic.com/static/v1/mip.css">
+		<link rel="canonical" href="https://www.168jm.com">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="../css/article.css">
+		<style mip-custom>
+			mip-form div {
+				 display:block;
+				 color:#ec1f5c;
+				 text-align:left;
+				 padding:0;
+			}
+			mip-form form {
+    position: relative;
+}
+
+#form {
+	padding: 0.4rem 0.24rem;
+	background: #ffffff;
+    margin-top: 0.2rem;
+}
+#form .formbox i {
+    float: left;
+    width: 0.1rem;
+    height: 0.26rem;
+    border-radius: 0.05rem;
+    display: inline-block;
+    background: #FF5722;
+    background-size: 0.3rem;
+    margin-right: 0.14rem;
+}
+#form  .formbox .form_title {
+    font-size: 0.30rem;
+    color: #282828;
+    line-height: 0.28rem;
+    font-weight: bold;
+}
+#form dt {
+    display: block;
+    height: 0.8rem;
+    border: 1px solid #CCC;
+    margin: 10px auto 0px auto;
+    line-height: 0.8rem;
+    background: #FFF;
+    overflow: hidden;
+}
+#form em {
+    width: 20%;
+    background: #F5F5F5;
+    color: #666;
+    border-right: 1px solid #CCC;
+    text-align: center;
+    float: left;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin-right: 0.8%;
+}
+#form .logintxt {
+    float: left;
+    width: 78%;
+    display: block;
+    height: 0.78rem;
+    line-height: 0.78rem;
+    background: #FFF;
+    border: none;
+}
+#form  .regtxt {
+    float: left;
+    width: 78%;
+    display: block;
+    height: 0.78rem;
+    line-height: 0.78rem;
+    background: #FFF;
+    border: none;
+}
+#form  .textarea {
+    float: left;
+    width: 78%;
+    display: block;
+    height: 0.78rem;
+    line-height: 0.78rem;
+    background: #FFF;
+    border: none;
+    color: #666666;
+}
+mip-form input[type='text'], mip-form input[type='input'], mip-form input[type='datetime'], mip-form input[type='email'], mip-form input[type='number'], mip-form input[type='tel'], mip-form input[type='url'] {
+    padding-right: 30px;
+}
+mip-form input, mip-form textarea, mip-form select {
+    border: 1px solid #f1f1f1;
+    padding: 6px;
+    display: block;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    resize: none;
+    font-size: 16px;
+}
+mip-form div {
+    display: none;
+    color: #ec1f5c;
+    font-size: 12px;
+    text-align: left;
+    padding: 0 10% 0 3%;
+}
+.mip-form-target {
+    font-size: 0.25rem;
+}
+#form dd {
+    display: block;
+    line-height: 0.8rem;
+}
+.checkbox {
+    position: relative;
+    margin: 0 auto;
+    color: #999;
+}
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+.checkbox input[type="checkbox"]+label {
+    display: inline-block;
+    white-space: nowrap;
+    text-align: left;
+    -webkit-box-sizing: border-box;
+}
+mip-form input, mip-form textarea, mip-form select {
+    border: 1px solid #f1f1f1;
+    padding: 6px;
+    display: block;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    resize: none;
+    font-size: 16px;
+}
+.checkbox label:before {
+    content: "";
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: #DDD;
+    vertical-align: middle;
+    -webkit-border-radius: 50%;
+    margin-right: 5px;
+    -webkit-box-sizing: border-box;
+    -webkit-transition: background ease-in .5s;
+}
+.checkbox input[type="checkbox"]:checked+label:before {
+    background-color: #ff5722;
+    border: 4px #DDD solid;
+}.checkbox a {
+    color: #ff5722;
+}
+#form .tjhfbut {
+    width: 100%;
+    display: block;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    color: #FFF;
+    margin: 0px auto;
+    font-size: 0.3rem;
+    font-weight: normal;
+    background: #ff5722;
+    border: none;
+    padding: 0px;
+    text-align: center;
+}
+/*留言成功*/
+#my-formbox{
+	background: #ffffff;
+	padding: 1rem;
+}
+#my-formbox .formbox-close{
+	margin: 0 auto;
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+    padding: 0.1rem;
+    width: 2rem;
+    border: 1px solid #e4e4e4
+}
+/*资讯关联项目模块*/
+.item-detail{
+	background: #fff;
+	position: relative;
+}
+.item-detail>a {
+    border: 1px solid #f8f9fa;
+    border-left: none;
+    border-right: none;
+    padding: 0.24rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+.item-detail>a img {
+    display: block;
+    width: 1.5rem;
+    height: 1rem;
+    padding-right: 0.2rem;
+    margin: 0;
+}
+.item-detail-con {
+    width: 3.72rem;
+}
+.item-detail-con .title {
+    font-size: 0.36rem;
+    color: #333;
+    line-height: .52rem;
+    padding-bottom: 0.04rem;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 3rem;
+    font-weight: bold;
+    padding-top: 0 !important;
+}
+.item-detail-con .con{
+	height: 0.44rem;
+}
+.item-detail-con .con span.money {
+    font-size: 0.32rem;
+    color: #e60012;
+    font-weight: bold;
+    padding-bottom: 0;
+}
+.item-detail-con .con span {
+    font-size: 0.24rem;
+    color: #666;
+    line-height: 0.44;
+}
+.item-detail .btn {
+    border: 2px solid #e60012;
+    display: block;
+    color: #e60012;
+    font-size: 0.26rem;
+    line-height: 0.6rem;
+    width: 1.6rem;
+    height: .6rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 12px;
+    position: absolute;
+    top: 0.44rem;
+    right: 0.24rem;
+}
+</style>
+	</head>
+	<body>
+		<mip-yesky-rem data-rem="750" class="mip-element mip-layout-container"></mip-yesky-rem>
+		<mip-cambrian site-id="1612546382269331"></mip-cambrian>
+		<mip-fixed type="top">
+			<header>
+				<div class="header_div header_style2 clearfix">
+					<div class="header_div_left history fl">
+						<!--<img src="icon/fenlei@2x.png" />-->
+					</div>
+					<div class="header_div_center fl clearfix" on="tap:my-searchbox.open">	
+						<div class="hdc_search fl">
+							<span class="hdc_search_icon"></span>搜索
+						</div>
+					</div>
+					<div class="header_div_right fr" on="tap:my-lightbox.toggle">
+						<!--<img src="icon/xiala@2x.png" />-->
+					</div>
+				</div>
+			</header>
+		</mip-fixed>
+		<div class="title"><div class="page_inner">
+			<h3>"餐饮+"成为亮眼的选择，打造更多可能性增强消费者的情感体验。</h3>
+			<p><span>文/zhangshan</span> <span>2018-8-22 16：49：21</span></p>
+		</div></div>
+		<!--资讯关联项目start-->
+		<div class="item-detail">
+			<a href="#"> <img src="https://img.168jm.cn/Picture/2019-03-05/1551772785396643.jpg">
+				<div class="item-detail-con">
+					<p class="title">菜鸟物流</p>
+					<div class="con clearfix"><span id="brand-msg-count" class="money">1243</span><span>人意向加盟</span></div>
+				</div>
+				<div class="btn jm-popup" ><a href="#form">索取资料</a></div>
+			</a>
+		</div>
+		<!--资讯关联项目end-->
+		<div class="article_main"><div class="page_inner">
+			<div class="article_main_content">
+				内容呢哦人呢深度覆盖发电公司电饭锅但是反观但是反观但是反观电饭锅
+				内容呢哦人呢深度覆盖发电公司电饭锅但是反观但是反观但是反观电饭锅
+				内容呢哦人呢深度覆盖发电公司电饭锅但是反观但是反观但是反观电饭锅
+				内容呢哦人呢深度覆盖发电公司电饭锅但是反观但是反观但是反观电饭锅
+				内容呢哦人呢深度覆盖发电公司电饭锅但是反观但是反观但是反观电饭锅
+				内容呢哦人呢深度覆盖发电公司电饭锅但是反观但是反观但是反观电饭锅内容呢哦人呢深度覆盖发电公司电饭锅但是反观但是反观但是反观电饭锅
+			</div>
+			<div class="article_main_bottom">
+				<p><span>来源 ：15sj网</span><span>编辑：小王</span></p>
+			</div>
+		</div></div>
+		<div id="form">
+			<div class="formbox">
+				<i></i><div class="form_title">在线留言(申请加盟一点点)</div>
+			</div>
+		<!--	<mip-form target="_self" method="post" url="https://" fetch-url="https://ht.168jm.cn/wap/index/leave"  class="mip-element mip-layout-container">-->
+				<mip-form method="POST" fetch-url="https://ht.168jm.cn/wap/index/leave" class="mip-element mip-layout-container">
+					
+	     		<dl>
+	     			<input type="hidden" name="id" value="4526" />
+	     			<input type="hidden" name="type" value="2" />
+	                <dt><em>姓名</em><input type="text" name="name" validatetarget="name" validatetype="must" placeholder="姓名" class="logintxt"></dt>
+	                <dd><div class="mip-form-target" target="name">姓名不能为空</div></dd>
+	                <dt><em>手机</em><input type="text" name="tel" validatetarget="phone" validatetype="phone" validatereg="^[1][0-9]{10}$" class="regtxt" maxlength="11" placeholder="请输入手机号码"></dt>
+	                <dd><div class="mip-form-target" target="phone">请输入正确的电话号码</div></dd>
+	                <dt><em>留言</em><textarea name="intro" cols="" rows="" class="textarea roundimgx"></textarea></dt>
+	                <dd class="checkbox">
+	                	<input checked="checked" name="allowProtocol" id="allowProtocol" value="0" type="checkbox">
+	                	<label for="allowProtocol">我已阅读并同意</label>
+	                	<a href="https://m.168jm.cn/about/disclaimer.html" target="_blank">
+	                		《即盟网免责声明》
+	                	</a>
+	                </dd>
+	                <dd>
+	                	<input id="lytj" type="submit" value="提交咨询" class="tjhfbut roundimgx" on="tap:my-formbox.toggle">
+	                </dd>
+	               
+	            </dl>
+			</mip-form>
+		</div>
+		<div class="jmdt"><div class="page_inner">
+			<div class="title clearfix">
+				<i></i>
+				<div class="fl">品牌动态</div>
+			</div>
+			<ul>
+				<li><a href="#">
+					<h5>奶茶店的加盟之道：出于情怀阿顺帆古典风格但是反观但是反观深度覆盖但是反观</h5>
+					<div class="li_bottom"><span>来源/互联网</span><span><i class="icon_i1"></i>9999</span><span><i class="icon_i2"></i>2018-07-04</span></div>
+				</a></li>
+				<li><a href="#">
+					<h5>奶茶店的加盟之道：出于情怀阿顺帆古典风格但是反观但是反观深度覆盖但是反观</h5>
+					<div class="li_bottom"><span>来源/互联网</span><span><i class="icon_i1"></i>9999</span><span><i class="icon_i2"></i>2018-07-04</span></div>
+				</a></li>
+				<li><a href="#">
+					<h5>奶茶店的加盟之道：出于情怀阿顺帆古典风格但是反观但是反观深度覆盖但是反观</h5>
+					<div class="li_bottom"><span>来源/互联网</span><span><i class="icon_i1"></i>9999</span><span><i class="icon_i2"></i>2018-07-04</span></div>
+				</a></li>
+			</ul>
+		</div></div>
+		<!--熊账号 start-->
+		<!--<div style="padding-left: 17px; padding-right: 17px;">
+		    <script>cambrian.render('tail')</script>
+		</div>-->
+		<!--熊账号 end-->
+		<footer>
+			<div class="footer_top"><ul class="li-fl">
+				<li><a href="#">新闻</a></li>
+				<li><a href="#">找项目</a></li>
+				<li><a href="#">餐饮</a></li>
+				<li><a href="#">火锅</a></li>
+				<li><a href="#">甜品</a></li>
+				<li><a href="#">建材</a></li>
+			</ul></div>
+			<div class="footer_bottom padding_b">
+				<p class="p1"><a href="#">电脑版</a><span>|</span><a href="#">MIP</a></p>
+				<p>COPYRIGHT &copy; 2018 168加盟网</p>
+				<p>川ICP备11111111-1号</p>
+			</div>
+		</footer>
+		<!--公用搜索模块组件 start-->
+		<mip-lightbox id="my-searchbox" layout="nodisplay" class="mip-hidden">
+		<div class="hdc_search_div">
+			<div class="sousuotitle clearfix">
+				<mip-form method="get" url="https://m.168jm.cn/industry/index.html">
+					<div class="left fl"  on="tap:my-searchbox.close">
+						<mip-img src="../icon/fanhui@2x.png"></mip-img>
+					</div>
+					<div class="inputbox fl">
+						<span class="inputbox_icon"></span>
+						<input type="text" name="name" id="searchPage" value="" placeholder="请输入您想查找的项目">
+					</div>
+					<div class="fr" id="sousuosu_bmit">
+						<input type="submit" class="sousuosubmit" value="搜索">
+					</div>
+				</mip-form>
+			</div>
+			<div class="sousuocontent">
+				<div class="title">热门搜索</div>
+				<div class="content" data-id="m_n_search_recommend" data-type="cmsadpos">
+					<a href="#" data-id="5941" data-type="cmsad">
+						<div class="list">功夫鸡排</div>
+					</a>
+					<a href="#" data-id="14649" data-type="cmsad">
+						<div class="list">雪之蜜语</div>
+					</a>
+					<a href="#" data-id="41721" data-type="cmsad">
+						<div class="list">巴比酷肉蟹煲</div>
+					</a>
+					<a href="#" data-id="55175" data-type="cmsad">
+						<div class="list">喫茶时光</div>
+					</a>
+					<a href="#" data-id="55176" data-type="cmsad">
+						<div class="list">蜜秘鸡地炸鸡</div>
+					</a>
+					<a href="#" data-id="55177" data-type="cmsad">
+						<div class="list">美贝美妈</div>
+					</a>
+					<a href="#" data-id="55178" data-type="cmsad">
+						<div class="list">过江龙火锅</div>
+					</a>
+					<a href="#" data-id="55179" data-type="cmsad">
+						<div class="list">洁希亚国际洗衣</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		</mip-lightbox>
+		<mip-lightbox id="my-lightbox" layout="nodisplay" class="mip-hidden">
+			<div class="header_right_list">
+				<ul>
+					<li><a href="#"><span class="index"></span>首页</a></li>
+					<li><a href="#"><span class="fenlei"></span>分类搜索</a></li>
+					<li><a href="#"><span class="zixun"></span>创业资讯</a></li>
+					<li><a href="#"><span class="main_top"></span>加盟排行</a></li>
+				</ul>
+			</div>
+		</mip-lightbox>
+		<mip-lightbox  id="my-formbox" layout="nodisplay" class="mip-hidden">
+		  <div class="formbox">
+		    <p>咨询提交成功，招商专员将在24小时内与您联系，请保持手机号码畅通，谢谢</p>
+		    <span on="tap:my-formbox.toggle" class="formbox-close">关闭弹层</span>
+		  </div>
+		</mip-lightbox>
+		<!--公用搜索模块组件 end-->	
+		 <!--mip 运行环境-->
+        <script src="https://mipcache.bdstatic.com/static/v1/mip.js"></script>
+        <script src="https://c.mipcdn.com/static/v1/mip-fixed/mip-fixed.js"></script> <!--fixed-->
+        <script src="https://c.mipcdn.com/static/v1/mip-lightbox/mip-lightbox.js"></script><!--弹窗-->
+		<script src="https://mipcache.bdstatic.com/extensions/platform/v1/mip-yesky-rem/mip-yesky-rem.js "></script><!--rem-->
+		<script src="https://c.mipcdn.com/static/v1/mip-form/mip-form.js"></script><!--表单提交-->
+		<script src="https://c.mipcdn.com/extensions/platform/v1/mip-sj-search/mip-sj-search.js"></script><!--表单提交 自己研发-->
+		<!--熊账号 start-->
+		<script src="https://c.mipcdn.com/extensions/platform/v1/mip-cambrian/mip-cambrian.js"></script>
+		<script type="application/ld+json">
+	        {
+	            "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+	            "@id": "https://www.example.com/******",
+	            "appid": "1612546382269331",
+	            "title": "页面标题******",
+	            "images": [
+	                "https://www.example.com/***/pic1.png",
+	                "https://www.example.com/***/pic2.png",
+	                "https://www.example.com/***/pic3.png"
+	            ], //请在此处添加希望在搜索结果中展示图片的url，可以添加0个、1个或3个url
+	            "pubDate": "2017-06-15T08:00:01" // 需按照yyyy-mm-ddThh:mm:ss格式编写时间，字母T不能省去
+	        }
+    	</script>
+    	<!--熊账号 end-->
+	</body>
+</html>

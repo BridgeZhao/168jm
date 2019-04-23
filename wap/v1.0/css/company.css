@@ -1,0 +1,180 @@
+.companyBox{
+	padding: 0.62rem 0.24rem;
+	background:url(../icon/com_bg.png) no-repeat center;
+}
+.comImg{
+	width: 1rem;
+	height: 1rem;
+}
+.comImg img{
+	width: 100%;
+	height: 100%;
+}
+.comTit{
+	margin-left:0.2rem ;
+	padding-left:0.1rem ;
+	height: 0.58rem;
+	line-height: 0.58rem;
+	font-size: 0.36rem;
+	color: #ffffff;
+	width: 5.3rem;
+}
+.News_itemBox{
+	background: #ffffff;
+	margin-top:0.1rem;
+	padding: 0 0.24rem;
+}
+.News_itemBox-in{
+	/*height: 0.96rem;*/
+	line-height: 0.96rem;
+}
+.News_itemBox-in em{
+	display: inline-block;
+	width: 0.4rem;
+	height:0.96rem;
+}
+.iconfont_gs{
+	background: url(../icon/compony_gs.png) no-repeat center;
+	background-size:0.4rem 0.4rem ;
+}
+.iconfont_zj{
+	background: url(../icon/compony_zj.png) no-repeat center;
+	background-size:0.4rem 0.4rem ;
+}
+.iconfont_dz{
+	background: url(../icon/compony_dz.png) no-repeat center;
+	background-size:0.4rem 0.4rem ;
+}
+.iconfont_sj {
+	background: url(../icon/compony_sj.png) no-repeat center;
+	background-size:0.4rem 0.4rem ;
+}
+.iconfont_jj{
+	background: url(../icon/compony_gs.png) no-repeat center;
+	background-size:0.4rem 0.4rem ;
+}
+.News_itemBox-in .NewsTBox{
+	margin-left: 0.17rem;
+	color: #151515;
+	font-size: 0.3rem;
+}
+.News_itemBox-in i{
+	display: inline-block;
+	padding-left: 0.8rem;
+	color: #666666;
+	font-size: 0.24rem;
+	position: relative;
+}
+.News_itemBox-in .company_text{
+	max-width: 4.4rem;
+	overflow: hidden;
+	padding-top: 0.27rem;
+}
+.News_itemBox-in .company_text p{
+	line-height: 0.38rem;
+	margin-bottom: 0.8rem;
+	overflow: hidden;
+}
+.company_text_s{
+	max-height: 3rem;
+}
+.company_text_s p{
+	max-height: 2.2rem;
+}
+#company_click{
+	width: 0.8rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	background: #1296db;
+	position: absolute;
+	bottom: 0.1rem;
+	right: 0.1rem;
+	color: #ffffff;
+	cursor: pointer;
+	border-radius: 0.18rem;
+	font-size: 0.20rem;
+	text-align: center;
+}
+.proBoxlist li{
+	height: 1.6rem;
+	padding: 0.3rem 0.24rem;
+	border: 1px solid #e4e4e4;
+	background: #ffffff;
+	margin-top: 0.1rem;
+}
+.proBoxlist li .proImgBox{
+	width: 2rem;
+	height: 1.6rem;
+}
+.proBoxlist li .proImgBox img{
+	width: 100%;
+	height: 100%;
+}
+.proTitBox{
+	margin-left: 0.16rem;
+	width: 4.8rem;
+	position: relative;
+}
+.proTitBox h3{
+	height: 0.55rem;
+	line-height: 0.55rem;
+	font-size: 0.32rem;
+	color: #151515;
+}
+.proTitBox p{
+	margin-top: 0.55rem;
+	height: 0.5rem;	
+	line-height: 0.5rem;
+}
+.proTitBox b.proPrice{
+	font-size: 0.32rem;
+	color: #151515;
+}
+.proTitBox .linkBtns{
+	width:1.5rem;
+	height:0.5rem;
+	line-height: 0.5rem;
+	background:rgba(255,87,33,1);
+	border-radius:6px;
+	display: inline-block;
+	color: #ffffff;
+	text-align: center;
+	
+}
+#Paging {
+		 padding-top: 0.1rem;
+		 text-align: center;
+		}
+		#Paging  a{
+			display: inline-block;
+			background: #ffffff;
+			padding: 0.1rem;
+		}
+		#Paging  a.select{
+			background: #ff5722;
+			color: #ffffff;
+		}
+		#Paging  .button3{
+			padding: 0.1rem 0.2rem;
+		}
+		#Paging .button2{
+			border-radius: 0.1rem;
+		}
+		#Paging  #Paging_pre{
+			float: left;
+			margin-left: 0.24rem;
+		}
+		#Paging #Paging_next{
+			float: right;
+			margin-right: 0.24rem;
+		}
+		#Paging  .newpag_span{
+			display: inline-block;
+			background: #ffffff; 
+			padding: 0.1rem;
+		}
+		#Paging  .newpag_span em{
+			display: inline-block;
+			color:#ff5722 ;
+			padding-right: 0.1rem;
+		}

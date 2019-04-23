@@ -1,0 +1,352 @@
+
+body{
+	overflow-x:hidden; 
+}
+.head-search{
+	width: 100%;
+	padding:0.2rem 0;
+	height: 0.9rem;
+	position: relative;
+	border-bottom: 1px solid #d9d9d9;
+	background: #fff;
+	z-index: 10;
+}
+.search-left{
+	width: 0.5rem;
+	height: 100%;
+	margin-left: 0.2rem;
+}
+.search-left a{
+	display: inline-block;
+	width: 0.46rem;
+	height: 0.46rem;
+	background: url(../sprites/fanhui.png) no-repeat left top/cover;
+	vertical-align: top;
+}
+.search-center{
+	width: 4.3rem;
+	height: 100%;
+	margin-left: 0.35rem;
+}
+.search-center form{
+	height: 100%;
+	position: relative;
+	border-bottom:1px solid #d9d9d9; 
+}
+.search-center form input{
+	vertical-align: top;
+	height: 100%;
+	width: 100%;
+	background: none;
+	border:0 none;
+	color:#d9d9d9;
+	font-size:0.26rem;
+	padding-left: 0.7rem;
+}
+.search-center form i{
+	position: absolute;
+	top:0.09rem;
+	left:0.19rem;
+	display: block;
+	width: 0.32rem;
+	height: 0.32rem;
+	background: url(../sprites/sousuo.png) no-repeat left top/cover;
+}
+.search-center form span{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 0.01rem;
+	height: 0.13rem;
+	background: #d9d9d9;
+}
+.search-center form .post1{
+	left:0;
+}
+.search-center form .post2{
+	right:0;
+}
+.project{
+	width: 100%;
+	background: #ffffff;
+}
+.project-left{
+    overflow-scrolling: touch;
+	-webkit-overflow-scrolling: touch;
+}
+.project-left ul li{
+	width: 1.8rem;
+	height: 1rem;
+	position: relative;
+}
+.project-left ul li:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -0.55rem;
+	width: 1.1rem;
+	height:1px;
+	background: #ebebeb;
+}
+.project-left ul li a{
+   display: inline-block;
+   background: #f5f5f5;
+   font-size: 0.22rem;
+   width: 1.8rem;
+   height: 1rem;
+   text-align: center;
+   line-height: 1rem;
+   vertical-align: top;
+/*   border-bottom: 1px solid #d9d9d9;*/
+/*   border-right: 1px solid #d9d9d9;*/
+   color:#4d4d4d;
+}
+.project-left ul .active a{
+	color:#ff5722;
+	background: #ffffff;
+	border-right: none;
+}
+.project-right{
+	width: 5.26rem;
+	margin-left: 0.2rem;
+	margin-right: 0.24rem;
+	box-sizing: border-box;
+	overflow: hidden;
+	overflow-scrolling: touch;
+	-webkit-overflow-scrolling: touch;
+}
+#project .project-right{
+	width: 100%;
+	padding:0 0.2rem;
+	box-sizing: border-box;
+}
+.project-top-img {
+	width: 100%;
+	height: 1.52rem;
+	margin-top: 0.2rem;
+	z-index: 10;
+}
+.project-top-img img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.project-nav{
+	width: 100%;
+	height: 0.68rem;
+	margin:0.15rem 0;
+	position: relative;
+	background:#fff;
+	
+}
+.project-fixed{
+	position:absolute;
+	top:0.9rem;
+	right: 0;
+	width: 4.91rem;
+	padding-right: 0.2rem;
+	height: 0.68rem;
+	z-index: 22;
+	display: none; 
+}
+.project-fixed .project-nav{
+    margin:0;
+	border-bottom:1px solid #fe0000;    
+}
+#fixed01.project-fixed{
+	width: 100%;
+	padding: 0 0.2rem;
+}
+#fixed01.project-fixed .project-nav .navigation li{
+	width: 32%;
+	height: 0.68rem;
+	margin-right: 2%;	
+}
+#fixed01.project-fixed .project-nav .navigation li:last-child{
+	float: right;
+	margin-right: 0;
+}
+.project-nav .industry{
+	height: 2.72rem;
+	overflow: auto;
+}
+.project-nav .industry li{
+	width: 50%;
+	padding-right: 0.2rem;
+}
+.project-nav .navigation li{
+	width: 50%;
+	height: 0.68rem;
+}
+
+#project .project-nav .navigation li{
+	width: 32%;
+	height: 0.68rem;
+	margin-right: 2%;
+}
+#project .project-nav .navigation li:last-child{
+	float: right;
+	margin-right: 0;
+}
+.project-nav .navigation li a{
+	/*display: inline-block;*/
+	display: block;
+	width: 100%;
+	height: 0.68rem;
+	line-height: 0.68rem;
+	font-size:0.24rem;
+	color:#4d4d4d;
+	text-align: center;
+	/*-vertical-align: top;*/
+	/*float: left;*/
+	position: relative;
+}
+.project-nav .navigation li a i{
+	display: block;
+	width: 0.15rem;
+	height: 0.08rem;
+	position: absolute;
+	top:50%;
+	right:0.2rem;
+	margin-top: -0.04rem;
+	background: url(../sprites/xiala.png) center center/cover;	
+}
+.project-nav .navigation .active a{
+	color:#f93700;
+}
+.project-nav .navigation .active a i{
+	background: url(../sprites/xiala-red.png) center center/cover!important;	
+}
+
+
+.nav-pos{
+	width: 100%;
+	background: #f9f8f6;
+	position: absolute;
+	top:0.68rem;
+	left:0;
+	z-index: 3;
+}
+.nav-pos ul{
+    width: 3.84rem;
+    margin:0 auto;
+}
+.nav-pos ul li{
+	height: 0.68rem;
+}
+.nav-pos ul li a{
+	font-size: 0.22rem;
+	color:#555;
+	display: inline-block;
+	/*display: block;*/
+	vertical-align: top;
+	line-height: 0.6rem;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	box-sizing: border-box;
+}
+.nav-pos ul .active a{
+	color:#f93700;
+}
+.nav-pos ul .active i{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	display: block;
+	width: 0.22rem;
+	height: 0.16rem;
+	margin-top:-0.08rem;
+	background: url(../sprites/gougou.png) center center/cover;
+}
+
+.money ul li{
+	width: 50%;
+	padding-right: 0.2rem;
+}
+.money ul .active a{
+	border-bottom: 1px solid #f93700;
+}
+
+.nav-div{
+	position: absolute;
+	top: 0.68rem;
+	left:0;
+	width: 100%;
+	background: #000;
+	opacity: 0.5;
+	z-index: 2
+}
+
+.project-details{
+	width: 100%;
+	overflow: hidden;
+}
+.Margin{
+	margin-top: 0.68rem;
+}
+.top-load{
+	font-size: 0.16rem;
+	width: 100%;
+	text-align: center;
+	color:#c1c1c1;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	padding-bottom:0.6rem;
+}
+.main_top ,.main_bottom{
+	margin-top: 0.2rem;
+	background: #fff;
+}
+.top-title ,.bottom-title{
+	padding-top: 0.15rem;
+	/*height: 0.42rem;*/
+}
+.top-title img ,.bottom-title img{
+	display:block;
+	width: 5.26rem;
+	height: 1.8rem;
+	margin: 0 auto;
+}
+.title_p{
+	padding: 0.3rem 0;
+	font-size: 0.28rem;
+	color: #333333;
+}
+.title_p1{
+	padding-bottom: 0.3rem;
+	font-size: 0.28rem;
+	color: #333333;
+}
+.top-list ,.bottom-list{
+	margin-right:-0.2rem ;
+	/*padding-bottom: 0.40rem;*/
+}
+.top-list li ,.bottom-list li{
+	 float: left;
+	 width: 1.62rem;
+	 height: 1.62rem;
+	 margin-right: 0.2rem;
+	 margin-bottom: 0.2rem;
+	 border:1px solid #e4e4e4;
+	 box-sizing: border-box;
+	 text-align: center;
+	 line-height:1.62rem ;
+}
+.top-list li img , .bottom-list li img{
+	display: block;
+	width: 1.62rem;
+	height: 0.64rem;
+	margin: 0 auto;
+	margin-top: 0.24rem;
+}
+.top-list li p ,.bottom-list li p {
+	height: 0.24rem;
+	line-height: 0.24rem;
+	margin-top: 0.20rem;
+	color: #333333;
+	font-size: 0.24rem;
+	text-align: center;
+}

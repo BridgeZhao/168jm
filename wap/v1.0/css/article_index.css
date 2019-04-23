@@ -1,0 +1,189 @@
+/*********轮播***************/
+#banner_swiper {
+	width: 100%;
+	height: 3.5rem;
+}
+#banner_swiper  img{
+	width: 7.5rem;
+}
+#banner_swiper #content4_lunbo_buttons{
+	bottom: 3%;
+    left: 0;
+    width: 100%;
+    height: 0.3rem;
+}
+#banner_swiper #content4_lunbo_buttons span{
+    opacity: 0.6;
+    width: 0.14rem;
+	height: 0.14rem;
+	background: #ffffff;
+}
+#banner_swiper #content4_lunbo_buttons span.swiper-pagination-bullet-active{
+	background:#ff5722 ;
+}
+.banner_img{
+	margin-top:0.2rem ;
+	height: 1.2rem;
+}
+.banner_img img{
+	width: 100%;
+}
+.nav{
+	margin-top:0.2rem ;
+	padding-top: 0.2rem;
+	background: #ffffff;
+}
+.nav ul{
+	margin-right: -0.1rem;
+}
+.nav li{
+	background: #f5f5f5;
+	color: #333333;
+	font-size: 0.3rem;
+	width: 1.68rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	margin: 0.1rem 0.1rem 0.1rem 0;
+	text-align: center;
+	border-radius: 0.06rem;
+}
+.nav li.active{
+	background: #ff5722;
+	
+}
+.nav li.active a{
+	color: #ffffff;
+}
+/*新闻列表*/
+.list_div{
+	background: #ffffff;
+}
+.list_div  li{
+	padding: 0.3rem 0;
+	border-bottom: 1px solid #e4e4e4;
+}
+.list_div li .li_img{
+	width: 2.4rem;
+	height: 1.6rem;
+}
+.list_div li .li_text{
+	width: 4.38rem;
+	height:1.6rem ;
+	overflow: hidden;
+	padding-left: 0.24rem;
+	position: relative;
+}
+.list_div li .li_text h6{
+	max-height: 0.28rem;
+	line-height: 0.3rem;
+	font-size: .28rem;
+	color: #000000;
+	font-weight: 500;
+	margin-bottom: 0.05rem;
+	padding-top: 0.05rem;
+	overflow: hidden;
+}
+.list_div li .li_text .p1{
+	max-height: 0.62rem;
+	padding-top: 0.05rem;
+	width: 4.1rem;
+	line-height: 0.36rem;
+	overflow: hidden;
+	font-size: 0.22rem;
+	color: #666666;
+}
+.list_div li .li_text .p1 p{
+	font-size: 0.22rem;
+	color: #999;
+	line-height: 0.36rem;
+	overflow: hidden;
+}
+.list_div li .li_text .p2{
+	width: 4.38rem;
+	font-size: 0.22rem;
+	color: #999999;
+	overflow: hidden;
+	padding-left: 0.24rem;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 0.26rem;
+	line-height: 0.26rem;
+	padding-top: 0.1rem;
+	background: #ffffff;
+}
+.list_div li .li_text .p2 i{
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.2rem;
+	background: url(../icon/shijian@2x.png) no-repeat;
+	background-size:0.2rem ;
+	vertical-align: middle;
+	margin-right: 0.1rem;
+}
+/*加载更多*/
+.load { height: 0.75rem; text-align: center; line-height: 0.75rem; font-size: 0.26rem; color: #a2a2a2; position: relative; background: #fff; text-indent: 0.3rem; /*padding-bottom: 240px;*/ }
+
+.load .ic-load { float: left; display: none; position: absolute; top: 0.22rem; left: 34%; width: 0.26rem; height: 0.26rem; /*background: url(images/news_icons.png) no-repeat 0 -0.63rem;*/ background-size: 2.14rem 2.29rem; -webkit-animation: play 1s linear infinite; animation: play 1s linear infinite; }
+
+@-webkit-keyframes play { 0% { /*transform:rotateY(0deg);*/
+    /*transform:rotateX(0deg);*/
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    /*transform:rotate(0deg);*/ }
+  100% { /*transform:rotateY(360deg);*/
+    /*transform:rotateX(360deg);*/
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    /*transform:rotate(-360deg);*/ } }
+
+@keyframes play { 0% { /*transform:rotateY(0deg);*/
+    /*transform:rotateX(0deg);*/
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    /*transform:rotate(0deg);*/ }
+  100% { /*transform:rotateY(360deg);*/
+    /*transform:rotateX(360deg);*/
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    /*transform:rotate(-360deg);*/ } }
+ 
+/* new fenye  处理与pc同步事项 start   */
+#Paging {
+ padding-top: 0.1rem;
+ text-align: center;
+}
+#Paging  a{
+	display: inline-block;
+	background: #ffffff;
+	padding: 0.1rem;
+}
+#Paging  a.select{
+	background: #ff5722;
+	color: #ffffff;
+}
+#Paging  .button3{
+	padding: 0.1rem 0.2rem;
+}
+#Paging .button2{
+	border-radius: 0.1rem;
+}
+#Paging  #Paging_pre{
+	float: left;
+	margin-left: 0.24rem;
+}
+#Paging #Paging_next{
+	float: right;
+	margin-right: 0.24rem;
+}
+#Paging  .newpag_span{
+	display: inline-block;
+	background: #ffffff; 
+	padding: 0.1rem;
+}
+#Paging  .newpag_span em{
+	display: inline-block;
+	color:#ff5722 ;
+	padding-right: 0.1rem;
+}
+/* new fenye  处理与pc同步事项 end   */
