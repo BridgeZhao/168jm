@@ -1,0 +1,39 @@
+.wrap{width:1200px; margin:0 auto; padding-top: 20px; clear:both;overflow:hidden;zoom:1;}
+.main{float:left;width:910px;}
+.right {
+    padding-left: 10px;
+    width: 280px;
+}
+.focus-wrap{width:910px;height:120px; }
+.focus-wrap img{ width: 100%; height: 100%;}
+.tagsMod{width:910px;position:relative; z-index:9999; }
+.tagsMod em{font-style:normal;padding: 0 6px;*padding:0;_padding:0;}
+.tags{position:relative; z-index:99999;height:46px;border-top:#fff 16px solid; background:#f4f4f4;font-family: "微软雅黑","MicrosoftYahei","宋体","Arial Narrow",sans-serif;clear:both;_font-weight:bold;}
+.tags div{float:left;width:132px;height:33px; position: relative; margin-right:1px;padding-top:10px; /*background:url(http://mat1.gtimg.com/www/austin/map/tag_bg.png) -133px 0 no-repeat*/;color:#454545;font-size:16px;line-height:20px;text-align:center; cursor:pointer;_font-size:14px;text-shadow:1px -1px 1px #fff; }
+.tags div:hover{color:#8d5a00;background-position:-265px 0;}
+.tags .at{color:#ff5722;background-position:0 0;text-shadow:1px -1px 1px #ff7a21; background: #ffffff; }
+.tags div.at:before{content:''; position: absolute; top: 0; left: 0; width:100%; height: 3px; background: #ff5722;}
+.tags .at:hover{ color:#ff5722;background-position:0 0;}
+.tags .end{width:120px;margin:0;}
+.tags .end:hover{color:#8d5a00;background-position:-271px 0;}
+.tags #end.at{background-position:-5px 0;}
+.tags #end.at:hover{color:#fff;background-position:-5px 0;}
+
+#wrapCon { position:relative;overflow:hidden;zoom:1; margin-top: 20px;}
+.cons{ position:absolute;}
+.con{margin-bottom:12px;border:#e4e4e4 1px solid;border-top:#ff5722 1px solid;}
+.con a{padding:1px 2px 2px 2px;_padding:2px;*padding:2px;}
+.con a:hover{color:#fff;background:#3b639f; text-decoration:none;}
+.con .hd{height:39px; background:#fcfcfc;border-bottom:#fff 1px solid;}
+.con .hd h1{width:122px;height:39px; background:url(http://mat1.gtimg.com/www/austin/map/contit_bg.png) right center no-repeat;font-size:16px;line-height:39px;font-family: "微软雅黑","MicrosoftYahei","宋体","Arial Narrow",sans-serif; text-align:center;_font-weight:bold;_font-size:14px;}
+.con .bd{padding:10px 0;border-top:#e4e4e4 1px solid;overflow:hidden;zoom:1;}
+.con:hover .bd{background:#fcf7f6;}
+.con:hover .hd h1{color:#ff5722;}
+.con .bd dl{padding:0 0 10px 10px;overflow:hidden;zoom:1;}
+.con .bd dt{padding-left:7px;color:#b87500;font-weight:bold;line-height:28px; text-align: left;}
+.con .bd dd{float:left;overflow:hidden;zoom:1;}
+.con .bd ul{margin-right:0;padding-right:0;overflow:hidden;zoom:1;}
+.con .bd li{float:left;height:28px;padding:0 5px;line-height:28px;}
+.con .bd strong{color:#3b639f;}
+.con .bd strong a{color:#3b639f;}
+.con .bd strong a:hover{color:#fff;}

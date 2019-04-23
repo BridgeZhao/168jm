@@ -1,0 +1,134 @@
+#shop_content{text-align: left; margin-top: 20px;}
+.container-con{width:1200px;margin:0 auto;}
+.cpy_top span img{margin-top:13px;}
+
+/* 左边导航推荐 */
+/* 普通会员 */
+.shop-d-r-t{height:156px;border-bottom:1px solid #e4e4e4;}
+.ordinary_member{text-align: center;padding-top:20px;}
+.shop-sp{padding-bottom: 20px;}
+.companyname{width:250px;padding-left:14px;font-size:16px;color:#000;margin-top:8px;line-height:26px;height:52px;overflow:hidden;}
+.ktyear{margin-left:14px;font-size:16px;height:26px;color:#000;padding-left:35px;background:url(//qjyimg.qjy168.com/shop/ico/shop-ico0.png) no-repeat;margin-top:8px;}
+.ktyear2{margin-left:14px;font-size:16px;color:#000;height:26px;padding-left:35px;background:url(//qjyimg.qjy168.com/shop/ico/shop-ico10.png) no-repeat;margin-top:8px;}
+.ktyear em{margin:0px 5px;color:red;}
+.shop-d-s-r em{margin:0 3px; display: inline-block;}
+.shop-d-s-r em:first-child{margin-left:0px;}
+.shop-d-s-r a{
+	vertical-align: top;
+	margin-left: 10px;
+	border: 1px solid #666666;
+	border-radius: 8px;
+	display: inline-block;
+	font-size: 12px;
+	padding: 0 5px;
+}
+.shop-d-r-c{height:185px;border-bottom:1px solid #e4e4e4;}
+.s-d-r-b1{padding-left:14px;margin-top:16px;font-size:15px;color:#666;width:266px;}
+.shop-d-s-t{width:78px;float:left;}
+.shop-d-s-r{float:left;color:#333;width:177px;    display: -webkit-box !important;overflow: hidden;text-overflow: ellipsis;word-break: break-all;-webkit-box-orient: vertical;-webkit-line-clamp: 2;}
+.s-d-r-b1>*{float:left;}.s-d-r-btns{width:118px;height:36px;border:1px solid #e4e4e4;text-align:center;line-height:36px;}
+.s-d-r-b1 .s-d-r-btns>*{float:left;}
+.s-d-r-btns1{margin-right:10px;}
+.s-d-r-b1 .s-d-r-btns em{margin-top:5px;margin-right:7px;margin-left:18px;}
+.shop_zycp{height:43px;overflow:hidden;}
+.body_bto{background-color:#fff;min-height:300px;margin-top:25px;}
+.pro-details-left{width:900px;float: left;}
+.p_d_l_warp{width:280px;border:1px solid #e4e4e4;margin-bottom:20px;background-color:#fff;}
+/*#wrapper .s-hl-content .bd-hl-content{border:0px;} */
+.p_d_l_warp .top{height:45px;border-bottom:1px solid #e4e4e4;font-size:16px;color:#333;line-height:45px;}
+.p_d_l_warp .top h2{margin-left:15px;}
+.p_d_l_warp .bot a{display:inline-block;width:251px;height:44px;line-height:44px;border-bottom:1px dashed #e4e4e4;padding-left:14px;padding-right:14px;font-size:14px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.p_d_l_warp .bot a:last-child{border-bottom:0px;}
+.pro-details-right{width:280px;border-top:1px solid #e4e4e4;float:right;min-height:300px;}
+/* 右边内容 */
+.pro-details-right21{border:1px solid #e4e4e4;}
+.companyinfo{background-color:#fff;font-size:18px;}
+.boxs_right{background-color:#fff;font-size:18px;margin-bottom:20px;}
+.cpy_top{height:45px;border:1px solid #e4e4e4;line-height:45px;padding-left:16px;}
+.cpya_top{border-top:0px;border-right:0px;border-left:0px;}
+.cpyb_top h2{float:left;}
+.cpy_top strong{font-weight:500;font-size:18px;}
+.cpy_top span{float:right;margin-right:16px;margin-top:2px;}
+.cpy_bot{min-height:242px;background-color:#fff;border:1px solid #e4e4e4;}
+.cpy_img{float:left;}
+.cpy_img img{width:250px;height:200px;border:0;margin:20px;}
+.cpy_def{float:right;width:590px;margin-right:10px;margin-top:30px;/*height:190px;*/overflow:hidden;font-size:14px;color:#333;line-height:24px; position: relative;}
+.maxheight{
+	max-height: 190px;
+}
+#cpy_def_click{
+	position: absolute;
+	bottom:2px;
+	right: 10px;
+	width: 100px;
+	height: 20px;
+	text-align: right;
+	background: #ffffff;
+	cursor: pointer;
+	color: #000;
+}
+/* 店内热销产品 */
+.pro_hotsale_list{padding-bottom:15px;padding-top:6px;}
+.pro_hotsale_list li{float:left;width:180px;height:270px;margin:0px 16px;padding:5px;margin-top:10px;border:1px solid #fff;}
+.pro_hotsale_list li a{display:inline-block;width:100%;height:100%;}
+.p_h_picture img{width:180px;height:180px;}
+.p_h_title{font-size:14px;color:#333;margin-top:10px;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;height:42px;text-align: center;}
+.pro_hotsale_list li:hover .p_h_title{color:#f00;}
+.p_h_price{margin-top:12px;color:#f00;font-size:14px;text-align:center;font-weight:600;}
+.rele_recom_con{padding-top:12px;padding-bottom:12px;}
+.rele_recom_con a{display:inline-block;margin:10px 46px;font-size:14px;}
+.pro_hotsale_list li a:hover{text-decoration:none;}
+.dnrxcp_top{border-top:1px solid #e4e4e4;}
+/* 最新产品 */
+.cpy_cen{padding:18px 0px;border:1px solid #e4e4e4;border-top:0px;}
+.cpya_cen{border-right:0px;border-left:0px;}
+.cpyc_cen{border-right:1px solid #e4e4e4;border-left:1px solid #e4e4e4;}
+.cpy_cen a{float:left;margin:12px 18px;font-size:14px;      width: 188px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;}
+/* 商铺介绍 */
+.cmpy_item{width:1198px;min-height:30px;border:1px solid #e4e4e4;background-color:#fff;margin-bottom:20px;}
+.cmpy_item_intro{background:#fff url(//qjyimg.qjy168.com/shop/ico/bg1.png) no-repeat;}
+.company_name1>*{float:left;margin-top:36px;margin-bottom:24px;}
+.company_n{font-size:18px;color:#222;font-weight:600;margin-left:30px;}
+.renzh{height:26px;margin-bottom:24px;}
+.ktyear{margin-left:20px;}
+.company_default{font-size:14px;line-height:30px;color:#333;width:1140px;margin:0 auto;padding-bottom:20px;}
+/* 基本信息 */
+.cmpy_info{border-left:1px solid #e4e4e4;border-right:1px solid #e4e4e4;}
+.cpoy_tit{border-left:0px;border-right:0px;font-size:16px;}
+.table_info{width:1140px;margin:23px auto 0;}
+.n-shop-intro-con-table {border-spacing: 1px;width: 100%;border-collapse: collapse;}
+.n-shop-intro-con-table td { padding: 5px 8px;font-size: 13px;color: #555;vertical-align: top;word-break: break-all;border: 1px solid #e5e5e5;word-wrap: break-word;line-height: 24px;}
+.n-shop-intro-con-table .item-title {background-color: #f5f5f5; padding: 5px 0 5px 14px;width: 182px;}
+.n-shop-intro-con-table .tab2 {width: 387px;color: #999;}
+.cpoy_fl{border:0px;}
+.cpoy_ro_fl a{width:199px;margin:12px 20px;}
+/* 一行超出隐藏 */
+.thidden{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+
+/* 二维码 */
+.shop-qrcode{text-align:center; margin-bottom:20px; border-top:1px solid #e4e4e4;padding-top:20px;}				
+.shop-qrcode p{color:#00aaef;font-size:14px;}
+.shop-qrcode img{
+	display: inline-block;
+}
+
+/*阿里icon*/
+@font-face {
+  font-family: 'iconfont';  /* project id 1106653 */
+  src: url('//at.alicdn.com/t/font_1106653_ydovaw2vam.eot');
+  src: url('//at.alicdn.com/t/font_1106653_ydovaw2vam.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1106653_ydovaw2vam.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1106653_ydovaw2vam.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1106653_ydovaw2vam.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1106653_ydovaw2vam.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:18px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+   }

@@ -1,0 +1,240 @@
+body{
+	background: #f3f3f3;
+}
+.div_title{
+	font-size: 24px;
+	color: #373737;
+	font-weight: 500;
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 16px;
+	padding-left: 22px;
+	text-align: left;
+}
+.div_title:before{
+	content: "";
+	position: absolute;
+	left: 0 ;
+	top: 22px;
+	width: 6px;
+	height: 22px;
+	border-radius: 2px;
+	line-height: 22px;
+	background: #ff5722;
+}
+.div_title a.on{
+	color: #ff5722;
+}
+.div_more{
+	float: right;
+	height: 22px;
+	line-height: 22px;
+	font-size: 18px;
+	color: #636363;
+	padding-right:18px ;
+	position: relative;  
+}
+.div_more:before{
+	content: '';
+	position: absolute;
+	top: 2px;
+	right: 0;
+	width: 8px;
+	height: 16px;
+	background: url(../icon/gd.png) no-repeat;
+}
+.jc_sx{
+	display: inline-block;
+	width: 1px ;
+	height:22px ;
+	background: #aeaeae;
+	vertical-align: middle;
+	margin: 0 18px;
+}
+
+
+.content_banner{
+	padding-top: 20px;
+	width: 1200px;
+	height: 240px;
+}
+.content_banner img{
+	width: 1200px;
+	height: 240px;
+}
+.content_center{
+	
+}
+.content_center .left{
+	width: 796px;
+}
+.content_center .left ul{
+	margin-right: -20px;
+}
+.content_center .left li{
+	width: 148px;
+	height: 153px;
+	padding: 18px;
+	background: #ffffff;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	position: relative;
+}
+.content_center .left .li_img{
+	width: 150px;
+	height: 100px;
+}
+.content_center .left .li_p1{
+	font-size: 14px;
+	color: #373737;
+	padding-top: 12px;
+}
+.content_center .left .li_p2{
+	font-size: 14px;
+	color: #616161;
+	margin-top: 12px;
+}
+.content_center .left  .li_p3{
+	display: none;
+}
+.content_center .left li:hover .li_p3{
+	display: inline-block;
+	position: absolute;
+	width: 94px;
+	height: 28px;
+	line-height: 28px;
+	bottom: 10px;
+	left: 50%;
+	font-size: 14px;
+	color: #ffffff;
+	margin-top: 8px;
+	margin-left: -47px;
+	background: #ff5722;
+	border-radius:5px ;
+}
+.content_center .left .bottom-more{
+	height: 50px;
+	line-height: 50px;
+	background: #ff5722;
+	color: #ffffff;
+	font-size: 18px;	
+}
+.content_center .left .bottom-more:hover{
+	background:#ff7a21 ;
+}
+.content_center .right_top{
+	width: 384px;
+	margin-left: 20px;
+	padding-bottom: 56px;
+}
+.content_center .right_top li{
+	padding-bottom: 21px;
+	position: relative;
+}
+.content_center .right_top li .li_num{	
+	display: inline-block;
+	width: 20PX;
+	height: 20PX;
+	line-height: 20PX;
+	border:1px solid #373737 ;
+	font-size: 15PX;
+}
+.content_center .right_top li .li_text{	
+	display: inline-block;
+	height: 20PX;
+	line-height: 20PX;
+	font-size: 16PX;
+	padding-left: 20PX;
+}
+.content_center .right_top li .li_p1{	
+	display: inline-block;
+	height: 20PX;
+	line-height: 20PX;
+	font-size: 15PX;
+	padding-right: 18PX;
+}
+.content_center .right_top li .li_p2{
+	display: none;
+}
+.content_center .right_top li:hover .li_p2{	
+	display: inline-block;
+	position: absolute;
+	width: 80px;
+	height: 28px;
+	line-height: 28px;
+	top: -10px;
+	right: 0;
+	font-size: 14px;
+	color: #ffffff;
+	margin-top: 8px;
+	background: #ff5722;
+	border-radius:5px ;
+}
+.content_center .right_bottom{
+	width: 384px;
+	margin-left: 20px;
+}
+.content_center .right_bottom li{
+	width: 384px;
+	height: 170px;
+	padding-bottom: 20px;
+	position: relative;
+}
+.content_center .right_bottom li:nth-child(3){
+	padding-bottom: 0;
+}
+.content_center .right_bottom img{
+	width: 100%;
+	height: 100%;
+}
+.content_center .right_bottom .li_p{
+	width: 100%;
+	height: 46px;
+	line-height: 46px;
+	font-size: 20px;
+	color: #ffffff;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	background:rgba(0,0,0,0.4) ;
+}
+.content_center .right_bottom li:nth-child(3) .li_p{
+	bottom: 0;
+}
+
+.content_cyzx ul{
+	margin-right: -20px;
+}
+.content_cyzx li{
+	width: 285px;
+	height: 384px;
+	margin-right: 20px;
+	background: #ffffff;
+	text-align: left;
+}
+.content_cyzx li .li_img{
+	width: 100%;
+	height: 220px;
+}
+.content_cyzx li .li_strong{
+	display: block;
+	padding: 20px 20px 0 20px;
+	font-size: 20px;
+	color: #373737;
+}
+.content_cyzx li .li_p{
+	display: block;
+	padding: 16px 20px 0 20px;
+	color: #2b2b2b;	
+	line-height: 1.2;
+}
+.content_cyzx li .li_span{
+	display: inline-block;
+	margin-left: 20px;
+	margin-top:24px;
+	color: #2b2b2b;	
+	font-size: 14px;
+	background: #F0F0F0;
+	padding: 5px;
+}

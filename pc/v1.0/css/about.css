@@ -1,0 +1,203 @@
+.red{
+	color: #ff5722;
+}
+.main{
+	background: #E4E4E4;
+}
+.about_about_nav  {
+	margin: 0 auto
+}
+.about_nav{
+	background: rgba(0, 0, 0, .8) 
+}
+.about_nav ul{
+	background: url(../images/logo_bs.png) no-repeat;
+    background-size: 120px 30px;
+    background-position-x: 12px;
+    background-position-y: center;
+    padding-left: 150px;
+}
+
+.about_nav  li {
+	width: 140px;
+	height: 90px;
+	text-align: center;
+	float: left;
+	margin-right: 20px
+}
+
+.about_nav  a {
+	color: #fff;
+	padding: 0 30px;
+	font-size: 18px;
+	line-height: 90px;
+	display: block
+}
+
+.about_nav  li.current,
+.about_nav  li:hover {
+	background: rgba(255, 87, 34, .8)
+}
+
+.about {
+	background: url(../images/about_bg1.jpg) no-repeat center top;
+	padding-top: 360px;
+	padding-bottom: 20px
+}
+
+.about .wrap {
+	width: 1200px;
+	margin: 0 auto;
+	background: #fff;
+	
+}
+.about .text,
+.about_lx {
+	padding: 20px 65px 50px 65px
+}
+
+.about .text h1 {
+	line-height: 60px;
+	font-size: 30px;
+	text-align: center;
+	color: #333333;
+}
+
+.about .text h3 {
+	font-size: 16px;
+	text-align: left;
+	color: #666666;
+}
+
+.about .text p {
+	color: #67676a;
+	font-size: 16px;
+	line-height: 30px;
+	text-indent: 2em;
+	text-align: left;
+}
+
+.text .images {
+	margin: 30px 0
+}
+
+.t1 {
+	margin: 30px 0
+}
+
+.t1 h3 {
+	height: 20px;
+	line-height: 20px;
+	border-left: 3px #e84341 solid;
+	padding-left: 10px;
+	margin: 10px 0
+}
+
+.t1 p {
+	text-indent: 0!important
+}
+
+#mapbox {
+	width: 1070px;
+	height: 440px;
+	background: #ddd;
+	font-size: 14px;
+	line-height: 1.62em
+}
+
+.lx_box {
+	margin-top: 20px;
+	height: 210px;
+	background: url(../images/lxwm.png) no-repeat
+
+}
+
+.lx_box dl {
+	padding-top: 40px;
+	padding-left: 60px;
+	font-size: 16px;
+	color: #fff;
+	line-height: 30px;
+	float: left;
+}
+
+.lx_box dt {
+	width: 90px;
+	padding-left: 30px;
+	background: url(../imgs/lx_tel.png) no-repeat left center;
+	float: left;
+	clear: left
+}
+
+.lx_box dd {
+	margin-left: 30px
+}
+
+.lx_box dd p {
+	text-align: left;
+	margin: 0;
+	font-size: 16px;
+    color: #fff;
+    line-height: 30px;
+}
+
+.about_ts {
+	padding: 50px 65px
+}
+
+.about_ts h1,
+.about_ts h2 {
+	text-align: center;
+	margin: 0
+}
+
+.about_ts h1 {
+	font-size: 30px;
+	line-height: 50px;
+	color: #333333;
+}
+
+.about_ts h3 {
+	font-size: 18px;
+	text-align: left;
+	color: #666666;
+}
+
+.about_ts p {
+	font-size: 16px;
+	line-height: 30px;
+	margin: 20px 0;
+	text-align: left;
+}
+
+.hytk {
+	width: 1200px;
+	margin: 10px auto;
+	background: #fff
+}
+
+.tk_con {
+	padding: 20px 50px
+}
+
+.tk_con p {
+	font-size: 16px;
+	line-height: 30px;
+	margin: 20px 0
+}
+
+.tk_con h1 {
+	font-size: 30px;
+	line-height: 50px;
+	text-align: center
+}
+
+.tk_con h3 {
+	font-size: 18px
+}
+/*地图*/
+.ditu{
+	width: 600px;
+	height: 210px;
+	float: right;
+}
