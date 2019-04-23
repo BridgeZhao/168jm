@@ -1,0 +1,87 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+
+/*我的订购*/
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; background-color: #FaFaFa; }  
+.swiper-box .swiper-item{  
+    text-align: center;
+    margin: 40rpx;
+    width:670rpx;
+    height: 280rpx;
+    background-color: #fff;
+    border-radius: 10rpx;  
+    box-shadow:4rpx 4rpx 4rpx 4rpx #999999; 
+    padding-bottom: 10rpx;
+}  
+.swiper-item-top , .swiper-item-centerTop ,.swiper-item-centerBottom, .swiper-item-bottom{
+  width: 630rpx;
+  height: 80rpx;
+  background-color: #5572F9;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+  line-height: 80rpx;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: left;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.swiper-item-centerTop{
+  background-color: #FFF;
+  border-top-left-radius: 0rpx;
+  border-top-right-radius: 0rpx;
+  color: #666666;
+  border-bottom: 2rpx solid #F5F5F5; 
+}
+.swiper-item-centerTop .state{
+  color: #757575;
+}
+.swiper-item-centerTop .team{
+  color: #212121;
+}
+.swiper-item-centerBottom{
+  background-color: #FFF;
+  border-top-left-radius: 0rpx;
+  border-top-right-radius: 0rpx;
+  color: #999999;
+  flex-direction:row;
+  display: flex;
+}
+.swiper-item-centerBottom view{
+  flex:1; 
+  overflow: hidden;
+}
+ .swiper-item-bottom{
+  background-color: #FFF;
+  height: 40rpx;
+  line-height: 40rpx;
+  border-top-left-radius: 0rpx;
+  border-top-right-radius: 0rpx;
+  color: #757575;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+ }
+ .swiper-item-bottom .text1 , .text2{
+  color: #BCBCBC;
+  /*background-color: #F5F5F5;
+  width: 60rpx;
+  margin-left: -18rpx;
+  display: inline-block;
+  text-align: center;
+  border-bottom-left-radius: 10rpx;*/
+ }
+ /*.text2{
+    margin-left:0rpx;
+    border-bottom-left-radius: 0rpx;
+ }*/
+ .swiper-item-centerBottomImg{
+   display: inline-block;
+   width: 80rpx;
+   height: 80rpx;
+ }

@@ -1,0 +1,227 @@
+<!--<block wx:for-topdatas="{{topdata}}">-->
+<view class="top">
+    <view class="top_inner">
+        <view class="top_bg"><image class="top_bg_img" src="../../../image/banner.jpg"></image></view>
+        <view class="top_title center">
+            <text>数据分析</text>
+        </view>
+        <view class="top_1 center">
+            <text>{{topdata.name}} </text><text>{{topdata.week}} </text><text>{{topdata.number}}</text>
+        </view>
+        <view class="top_2 center">
+            <text>{{topdata.day}} </text><text>{{topdata.time}}</text>
+        </view>
+        <view class="top_3 row">
+            <view class="flex1 column center">
+                <!--<image src=""></image>-->
+                <text>{{topdata.teamA}}</text>
+            </view>
+            <view class="flex1 stateA  column center">
+                <text class="text_1">{{topdata.stateA}}</text>
+                <text>{{topdata.state}}</text>
+            </view>
+            <view class="flex1 column center">
+                <!--<image src=""></image>-->
+                <text>{{topdata.teamB}}</text>
+            </view>
+        </view>
+        <view class="top_4 center">
+         <text class="text1">[竞] </text><text>{{topdata.JANumber1}} </text><text>{{topdata.JANumber2}} </text><text>{{topdata.JANumber3}} </text>
+         <text class="text2">[竞{{topdata.rd}}] </text><text>{{topdata.JBNumber1}} </text><text>{{topdata.JBNumber2}} </text><text>{{topdata.JBNumber3}} </text>
+        </view>
+    </view>
+    
+    <!--</block>-->
+</view>
+<!--recommend start-->
+<view class="recommend">
+    <view class="recommend_title">
+        大数据智能推荐
+    </view>
+    <!--<block wx:for-topdatas ="{{recommend}}">-->
+        <view wx:if="{{recommend.pay == '0'}}" class="recommend_unpaid" bindtap="recommend">
+            <image class="recommend_unpaid_img" src="{{recommend.img}}"></image>
+            <view class="unpaid_text">
+                <text>{{recommend.title}}</text>
+                <view class="unpaid_text1">
+                    <text class="text1">{{recommend.money}}</text>
+                    <text class="text2">{{recommend.text}}</text>
+                </view>
+            </view>
+        </view>
+        <view wx:if="{{recommend.pay == '1'}}" class="recommend_paid">
+            <view class="paid_content column center">
+                <view class="row paid_title"><text class="flex1">{{topdata.teamA}}</text><text class="flex1">{{topdata.score}}</text><text class="flex1">{{topdata.teamB}}</text></view>
+                <view class="row paid_text">
+                    <text class="flex1">{{topdata.name1}}</text>
+                    <text class="flex1">{{topdata.rd1}}</text>
+                    <text class="flex1 {{topdata.scan=='0'? 'text_bg' : ''}}">{{topdata.JANumber1}}</text>
+                    <text class="flex1 {{topdata.scan=='1'? 'text_bg' : ''}}">{{topdata.JANumber2}}</text>
+                    <text class="flex1 text_bd {{topdata.scan=='2'? 'text_bg' : ''}}">{{topdata.JANumber3}}</text>
+                </view>
+                <view class="row paid_text">
+                    <text class="flex1">{{topdata.name2}}</text>
+                    <text class="flex1">{{topdata.rd}}</text>
+                    <text class="flex1 {{topdata.rcan=='0'? 'text_bg' : ''}}">{{topdata.JBNumber1}}</text>
+                    <text class="flex1 {{topdata.rcan=='1'? 'text_bg' : ''}}">{{topdata.JBNumber2}}</text>
+                    <text class="flex1 text_bd {{topdata.rcan=='2'? 'text_bg' : ''}}">{{topdata.JBNumber3}}</text>
+                </view>
+            </view>
+        </view>
+    <!--</block>-->
+</view>
+<!--recommend end-->
+<!--analysis start-->
+<view class="analysis">
+<!--<block wx:for-topdatas="{{analysis}}">-->
+    <view class="analysis_title">赛事球队分析</view>
+    <view class="analysis_inner">
+    <view class="analysis_team row">
+        <text class="flex1 center">{{topdata.teamA}}</text><text class="flex1 center">{{topdata.teamB}}</text>
+    </view>
+    <view class="progress">
+        <view class="progress_pa pr row">
+            <view class="column center progress_home" style="width:{{topdata.width}}%">
+                <text>{{topdata.width}}%</text>
+                <text>{{topdata.teamAoutcome}}</text>
+            </view>
+            <!--<view class="pa progress_text">智能指数</view>-->
+            <view class=" column center progress_visiting" style="width:{{topdata.width1}}%">
+                <text>{{topdata.width1}}%</text>
+                <text>{{topdata.teamBoutcome}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="analysis_text row">
+        <view class="flex1 analysis_text1">
+            <block wx:for-items="{{topdata.teamAtext}}">
+            <text>{{item}}</text>
+            </block>
+        </view>
+        <view class="flex1 analysis_text2">
+            <block wx:for-items="{{topdata.teamBtext}}">
+            <text>{{item}}</text>
+            </block>
+        </view>
+    </view>
+    </view>
+<!--</block>-->
+</view>
+<!--analysis end-->
+<!--trend start-->
+<view class="trend">
+<!--<block wx:for-topdatas="{{trend}}">-->
+    <view class="trend_title ">近期战绩走势</view>
+    <view class="trend_inner">
+    <view class="center trend_text">
+        <view>{{topdata.teamA}}</view>
+        <view class="row">
+        <block wx:for-items="{{topdata.teamAhistory}}" wx:key="{{item.id}}"> 
+            <text class="flex1" wx:if="{{item == '胜'}}">{{item}}</text>
+            <text class="flex1 text1"  wx:elif="{{item == '负'}}" >{{item}}</text>
+            <text class="flex1 text2"  wx:elif="{{item == '平'}}" >{{item}}</text>
+        </block>
+        </view>
+    </view>
+    <view class="center trend_text">
+        <view>{{topdata.teamB}}</view>
+        <view class="row">
+            <block wx:for-items="{{topdata.teamBhistory}}" wx:key="{{item.id}}"> 
+                <text class="flex1" wx:if="{{item == '胜'}}">{{item}}</text>
+                <text class="flex1 text1"  wx:elif="{{item == '负'}}" >{{item}}</text>
+                <text class="flex1 text2"  wx:elif="{{item == '平'}}" >{{item}}</text>
+            </block>  
+        </view>
+    </view>
+    </view>
+    <!--</block>-->
+</view>
+<!--trend end-->
+<!--odds start-->
+<view class="odds">
+<!--<block wx:for-topdatas="{{odds}}">-->
+    <view class="odds_title">赔率盘路</view>
+    <view class="odds_inner">
+        <view class="odds_1 row center" bindtap="tabFun">
+            <view class="{{tabArr.curHdIndex=='0'? 'text1' : ''}} " id="tab-hd01" data-id="0">{{topdata.odds[0].name}}</view>
+            <view class="{{tabArr.curHdIndex=='1'? 'text1' : ''}} " id="tab-hd02" data-id="1">{{topdata.odds[1].name}}</view>
+            <view class="{{tabArr.curHdIndex=='2'? 'text1' : ''}} " id="tab-hd03" data-id="2">{{topdata.odds[2].name}}</view>      
+        </view>
+        <view class="{{tabArr.curBdIndex=='0'? 'active' : ''}}" wx:if="{{tabArr.curBdIndex=='0'}}">
+            <view class="odds_2 row center">
+                <text class="flex1 odds_2_text1">{{topdata.odds[0].rate[0]}}</text><text class="flex1 odds_2_text2">{{topdata.odds[0].rate[1]}}</text>
+            </view>
+            <!--<view class="odds_3 row center">
+                <text class="flex1">{{topdata.odds[0].odd[0]}}</text><text class="flex1">{{topdata.pankou}}</text><text class="flex1">{{topdata.odds[0].odd[1]}}</text>
+            </view>-->
+            <view class="odds_4 row">
+                <view class="odds_4a" style="width:{{topdata.odds[0].rate[0]}}">{{topdata.odds[0].odd[0]}}</view>
+                <view class="odds_4b" style="width:{{topdata.odds[0].rate[1]}}">{{topdata.odds[0].odd[1]}}</view>
+            </view>
+        </view>
+
+          <view class="{{tabArr.curBdIndex=='1'? 'active' : ''}}" wx:if="{{tabArr.curBdIndex=='1'}}">
+            <view class="odds_2 row center">
+                <text class="flex1 odds_2_text1">{{topdata.odds[1].rate[0]}}</text>
+                <text class="flex1 odds_2_text2">{{topdata.odds[1].rate[1]}}</text>
+                <text class="flex1 odds_2_text2">{{topdata.odds[1].rate[2]}}</text>
+            </view>
+            <!--<view class="odds_3 row center">
+                <text class="flex1" >{{topdata.odds[1].odd[0]}}</text>
+                <text class="flex1" >{{topdata.odds[1].odd[1]}}</text>
+                <text class="flex1" >{{topdata.odds[1].odd[2]}}</text>
+            </view>-->
+            <view class="odds_4 row">
+                <view class="odds_4a" style="width:{{topdata.odds[1].rate[0]}}">{{topdata.odds[1].odd[0]}}</view>
+                <view class="odds_4b" style="width:{{topdata.odds[1].rate[1]}}">{{topdata.odds[1].odd[1]}}</view>
+                <view class="odds_4c" style="width:{{topdata.odds[1].rate[2]}}">{{topdata.odds[1].odd[2]}}</view>
+            </view>
+        </view>
+
+         <view class="{{tabArr.curBdIndex=='2'? 'active' : ''}}" wx:if="{{tabArr.curBdIndex=='2'}}">
+            <view class="odds_2 row center">
+                <text class="flex1 odds_2_text1">{{topdata.odds[2].rate[0]}}</text><text class="flex1 odds_2_text2">{{topdata.odds[2].rate[1]}}</text>
+            </view>
+            <!--<view class="odds_3 row center">
+                <text class="flex1">{{topdata.odds[2].odd[0]}}</text><text class="flex1">{{topdata.pankou}}</text><text class="flex1">{{topdata.odds[2].odd[1]}}</text>
+            </view>-->
+            <view class="odds_4 row">
+                <view class="odds_4a" style="width:{{topdata.odds[2].rate[0]}}">{{topdata.odds[2].odd[0]}}</view>
+                <view class="odds_4b" style="width:{{topdata.odds[2].rate[1]}}">{{topdata.odds[2].odd[1]}}</view>
+            </view>
+        </view>
+    </view>
+    <!--</block>-->
+</view>
+<!--odds end-->
+<!--ranking start-->
+<view class="ranking ">
+<!--<block wx:for-topdatas="{{ranking}}">-->
+    <view class="ranking_title">联赛排名</view>
+    <view class="ranking_inner">
+    <view class="row ranking_content">
+        <view class="flex1 row ranking_content_left">
+            <text class="title1">{{topdata.rankA[0]}}</text>
+            <view class="flex1 column center">
+                <text class="ranking_nb">{{topdata.rankA[1]}}</text>
+                <text class="ranking_name">{{topdata.teamA}}</text>
+            </view>
+        </view>
+        <view class="flex1 row">
+            <view class="flex1 column center">
+                <text class="ranking_nb">{{topdata.rankB[1]}}</text>
+                <text class="ranking_name">{{topdata.teamB}}</text>
+            </view>
+            <text class="title2">{{topdata.rankB[0]}}</text>
+        </view>
+    </view>
+    </view>
+    <view class="center bottom_text">给投注多一份参考</view>
+
+</view>
+<!--ranking end-->
+<navigator class="fiexd"  url="../../about/about">
+  <!--<view class="fiexd-img"><image src="../../image/fiexd.png"></image></view>-->
+  <view class="fiexd-text column"><text>关于</text><text>我们</text></view>
+</navigator>
+<!--</block>-->

@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/about/about",
+    "pages/index/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#31429d",
+    "navigationBarTitleText": "竞彩帮手",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {  
+   "color": "#c4cae7",  
+   "selectedColor": "#5572f9",  
+   "borderStyle":"white", 
+   "backgroundColor": "#212121" ,
+   "list": [{  
+     "selectedIconPath": "image/tuijian-1@2x.png",  
+     "iconPath": "image/tuijian-2@2x.png",  
+     "pagePath": "pages/index/index",  
+     "text": "赛事推荐"  
+   }, {  
+     "selectedIconPath": "image/dinggou-1@2x.png",  
+     "iconPath": "image/dinggou-2@2x.png",  
+     "pagePath": "pages/logs/logs",  
+     "text": "我的订购"  
+   }]  
+ } 
+}

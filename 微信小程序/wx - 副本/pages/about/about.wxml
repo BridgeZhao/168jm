@@ -1,0 +1,62 @@
+<!--pages/about/about.wxml-->
+
+<view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">关于我们</view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">会员特权</view>   
+</view>  
+  
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange"> 
+
+    <!-- 关于我们 --> 
+    <!--<scroll-view class="scroll" scroll-top="{{scrollTop}}" style="height:1500rpx;" scroll-y="true" bindscroll="scrll" > -->
+    <swiper-item>
+      <scroll-view scroll-y="true" style="height:{{winHeight - 31}}px">  
+      <view class="swiper-item swiper-item-top">
+        <image class="logo-img" src="{{userInfo.avatarUrl}}"></image>
+        <view class="title">{{userInfo.nickName}}</view>
+        <view class="text">本程序是团队研发部耗时3年通过竞彩大数据，依托于独家数据和人工智能研发出的一套盈利稳定的竞彩投注模型，提供平台化预测服务。</view>
+      </view>
+      <view class="swiper-item swiper-item-center">
+  
+         <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+          <view class="list" >
+            <image class="icon-center-1" src="../../image/{{item.image}}"></image>
+            <view>
+              <view class="center-title">{{item.name}}</view>
+              <view class="center-text">{{item.text}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+       </scroll-view>
+    </swiper-item>  
+    <!-- 会员特权 -->  
+    <swiper-item>  
+       <view class="swiper-item">
+          <view class="tq_title">      
+            新用户1元特权
+          </view>
+          <view class="tq_text">
+            <text>微信授权注册小程序的新用户，注册后可以以一场1元解锁最多10场赛事的推介；</text>
+            <text>10次机会用完后恢复原价或小程序推广价。</text>
+          </view>
+          <view class="tq_title">      
+            什么是彩金？
+          </view>
+          <view class="tq_text1">
+           <text>彩金是解锁大数据推介的代币名称，需要使用微信支付；</text>
+           <text>1彩金=1元，购买后可查看轻彩大数据智能推介预测，为你的投注提供多一份参考。</text>
+          </view>
+          <view class="tq_bottom">
+            <text>理性购彩，热心公益。</text>
+            <text>未满18周岁的未成年人禁止购彩及兑奖!</text>
+          </view>
+       </view>  
+    </swiper-item>  
+    <!--</scroll-view>-->
+    
+</swiper> 
+<navigator class="fiexd"  url="../about/about">
+  <!--<view class="fiexd-img"><image src="../../image/fiexd.png"></image></view>-->
+  <view class="fiexd-text column"><text>关于</text><text>我们</text></view>
+</navigator>

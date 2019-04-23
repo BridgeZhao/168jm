@@ -1,0 +1,27 @@
+<!--logs.wxml-->
+<view class="swiper-box">
+  <block wx:for-items="{{list}}" >
+     <swiper-item>
+        <block wx:for-items="{{list}}" wx:key="{{item.id}}"> 
+          <view class="swiper-item" catchtap="onPostTap" data-postId="{{item.id}}">
+        <view class="swiper-item-top">
+          <text>{{item.week}} </text><text>{{item.number}} </text><text>{{item.name}} </text><text>{{item.day}} </text><text>{{item.time}}</text>
+        </view>
+        <view class="swiper-item-centerTop">
+          <text class="state">{{item.state}} </text><text class="team">{{item.teamA}} {{item.stateA}} {{item.teamB}}</text> <text class="fr">></text> 
+        </view>
+        <view class="swiper-item-centerBottom">
+          <view>{{item.text}}</view>
+         <image wx:if="{{item.state == '未开始'}}" class="swiper-item-centerBottomImg" src="../../image/no.png"></image>
+         <image wx:elif="{{item.state == '进行中'}}" class="swiper-item-centerBottomImg" src="../../image/on.png"></image>
+         <image wx:elif="{{item.state == '已完场'}}" class="swiper-item-centerBottomImg" src="../../image/yiwanchang@2x.png"></image>
+        </view>
+        <view class="swiper-item-bottom">
+          <text class="text1">[竞] </text><text>{{item.JANumber1}} </text><text>{{item.JANumber2}} </text><text>{{item.JANumber3}} </text>
+          <text class="text2">[竞] </text><text>{{item.JBNumber1}} </text><text>{{item.JBNumber2}} </text><text>{{item.JBNumber3}} </text>
+        </view>
+      </view>
+        </block>
+    </swiper-item>  
+  </block>
+</view>
