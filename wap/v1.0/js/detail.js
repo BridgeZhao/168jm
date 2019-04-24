@@ -1,20 +1,30 @@
 window.onload=function(){
 	$('#main_detail_nav').on('click','li',function(){
-		var this_ = $(this)
-		$('.main_detail_bottom .zksq').click();
-		this_.addClass('active').siblings().removeClass('active')
-		var thisListTop = $('.main_detail_content .list').eq(this_.index()).offset().top 
-		var mainNavH = $('#main_detail_nav').outerHeight()
-		$(document).scrollTop(thisListTop - mainNavH) 
-	})
+	var this_ = $(this)
+	$('.main_detail_bottom .zksq').click();
+	this_.addClass('active').siblings().removeClass('active')
+	var thisListTop = $('.main_detail_content .list').eq(this_.index()).offset().top 
+	var mainNavH = $('#main_detail_nav').outerHeight()
+	//+1 解决nav滚动后 跳到上个nav内容 
+	$(document).scrollTop(thisListTop - mainNavH + 1) 	
+})
+	//头部熊账号 存在时
+	//	var xzh_height = $("._3tOSKX").height() < 1 ?  0 : $("._3tOSKX").height();
+	//	$(".main_detail_nav").css({'top': xzh_height+'px'})
+	
 	var mainDH = $('.main_detail').outerHeight()
 	var mainDT = $('.main_detail').offset().top
-	$(document).scroll(function(){
+	var listlen = $('.main_detail_content .list').length
+	var navh = $('#main_detail_nav').outerHeight();
+	$(document).on('scroll',function(){
 	  	var docTop = $(document).scrollTop()
-//	  	console.log(docTop,mainDT,mainDT + mainDH)
-//	  	console.log(docTop > mainDT , docTop < mainDT + mainDH)
 	  	if(docTop > mainDT && docTop < mainDT + mainDH){
 	  		$('.main_detail #main_detail_nav').addClass('positionF')
+	  		for(i = 0 ; i < listlen ; i++){
+	        	if(docTop >= $('.main_detail_content .list').eq(i).offset().top - navh){
+	        		$('#main_detail_nav li').eq(i).addClass('active').siblings('li').removeClass('active');
+	       		}
+	        }
 	  	}else{
 	  		$('.main_detail #main_detail_nav').removeClass('positionF')
 	  	}
@@ -50,26 +60,23 @@ window.onload=function(){
 			alert("请同意将我的联系方式推荐给商家")
 			return false;
 		}
-		user=$("input[id='user']").val()
-		mobile=$("input[id='mobile']").val()
-		message=$("input[id='message']").val()	
-		var data = {
-            URL: window.location.href,
-            URLTitle: document.title,
-//          ProjectID: ProjectID,
-            Name: user,
-            Tel: mobile,
-            Message: message
-        };
+		user=$("input[id='user']").val();
+		mobile=$("input[id='mobile']").val();
+		message=$("input[id='message']").val();
+		pro_id=$("#pro_id").val();
         var queryString = "";	
 		if(checkuser(user)&&checkmobile(mobile)&&checkmessage(message)){
 		$.ajax({
-            type: "post",
-            url: "www.168jm.cn",
-            dataType: "json", //数据类型为jsonp
-            data:data,
+            type : "get",
+            url : "https://ht.168jm.cn/wap/index/leave",
+            dataType: "jsonp",
+            jsonp: "jsonpCallback",
+            jsonpCallback: "jsonpCallback",
+            data:{
+            	'name':user,'tel':mobile,'intro':message,'id':pro_id
+			},
             success: function (data) {
-                alert(data.msg);
+            	alert(data);
                 $("#form-free-msg .btn-reset").click();
                 $("#form-footer-msg").show();
             },
@@ -81,6 +88,45 @@ window.onload=function(){
 			alert("提交格式错误，请重新输入！")
 		}
 	})
+	//底部留言提交
+	$(".leave_btm .span_2").on("click",function(){
+		$(".bg").show()
+		$(".leave_text").show()
+	})
+	$(".leave_text .close").on("click",function(){
+		$(".bg").hide()
+		$(".leave_text").hide()
+	})
+	$('.leave-btn').click(function(){
+		var reTel = /^1[3|4|5|7|8|9]\d{9}$/;
+	    if(reTel.test($(".leave-tel").val()) === false) {
+	        alert("请输入正确的电话号码！");
+	        $(".leave-tel").focus().select();
+	        return false;
+	    }
+		var data  = {
+	        id : pro_id=$("#pro_id").val(),
+	        tel : $(".leave-tel").val(),
+	    }
+		$.ajax({
+            type : "get",
+            url : "https://ht.168jm.cn/wap/index/leave",
+            dataType: "jsonp",
+            jsonp: "jsonpCallback",
+            jsonpCallback: "jsonpCallback",
+            data:data,
+            success: function (data) {
+            	alert(data);
+                $("#form-free-msg .btn-reset").click();
+                $("#form-footer-msg").show();
+                $(".bg").hide()
+				$(".leave_text").hide()
+            },
+            error: function () {
+                alert('fail');
+            }
+       });
+	});
 	$("input[id='user']").blur(function(){
 		user=$("input[id='user']").val()
 		checkuser(user)
